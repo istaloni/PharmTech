@@ -4,4 +4,4 @@ title: "PharmTech"
 
 Karl Marquez
 
-fuck this
+This website is for my pharmacy tech study

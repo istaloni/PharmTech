@@ -15,9 +15,7 @@ website:
 
 format:
   html:
-    theme:
-      - slate
-      - brand
+    theme: lux
     css: styles.css
     toc: true
 

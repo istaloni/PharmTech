@@ -1,0 +1,67 @@
+---
+title: "Introduction"
+description: "Module 1: Introduction to Pharmacy"
+author: "Karl Marquez"
+date: "2026-01-25"
+format: html
+---
+
+# Objectives
+* Define pharmacy and pharmacy technician and its role
+* Pharmacy types and equipment
+* Scope of a pharmacist and a pharmacy technician
+* Traits of a successful pharmacy technician
+
+## Interactive Study Flashcards
+
+```{ojs}
+//| echo: false
+
+// Load the data
+data = FileAttachment("flashcards.csv").csv({ typed: true })
+
+// State
+mutable index = 0
+mutable flipped = false
+
+// The Card UI
+viewof card = {
+  const container = html`<div style="perspective: 1000px; width: 450px; margin: 40px auto; cursor: pointer; height: 300px;">
+    <div id="inner" style="position: relative; width: 100%; height: 100%; transition: transform 0.6s; transform-style: preserve-3d; border-radius: 15px; box-shadow: 0 8px 16px rgba(0,0,0,0.15); border: 1px solid #e0e0e0;">
+      <div style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; padding: 30px; background: white; border-radius: 15px; font-size: 1.4rem; font-weight: bold; text-align: center;">
+        ${data[index].Question}
+      </div>
+      <div style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; transform: rotateY(180deg); display: flex; align-items: center; justify-content: center; padding: 30px; background: #f8f9fa; border-radius: 15px; font-size: 1.1rem; text-align: center;">
+        ${data[index].Answer}
+      </div>
+    </div>
+  </div>`;
+
+  container.onclick = () => {
+    mutable flipped = !mutable flipped;
+  };
+  
+  return container;
+}
+
+// Update the flip rotation based on the mutable state
+updateFlip = {
+  const inner = document.querySelector("#inner");
+  if(inner) {
+    inner.style.transform = flipped ? "rotateY(180deg)" : "rotateY(0deg)";
+  }
+}
+
+// Controls
+html`
+  <div style="text-align: center;">
+    <button style="padding: 10px 20px; border-radius: 20px; border: 1px solid #ccc; cursor: pointer;" 
+      onclick=${() => { mutable index = (index - 1 + data.length) % data.length; mutable flipped = false; }}>← Previous</button>
+    
+    <span style="margin: 0 20px; font-weight: bold; font-family: sans-serif;">${index + 1} / ${data.length}</span>
+    
+    <button style="padding: 10px 20px; border-radius: 20px; border: 1px solid #ccc; cursor: pointer;" 
+      onclick=${() => { mutable index = (index + 1) % data.length; mutable flipped = false; }}>Next →</button>
+  </div>
+`
+```

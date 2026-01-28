@@ -13,7 +13,7 @@ format: html
 -   Scope of a pharmacist and a pharmacy technician
 -   Traits of a successful pharmacy technician
 
-## Interactive Study Flashcards
+# Introduction to Pharmacy Technician Flashcards
 
 ```{ojs}
 //| echo: false

@@ -12,6 +12,9 @@ website:
         text: About me
     background: primary
     search: true
+  page-footer: 
+    left: "Karl Marquez, 2026"
+    background: light
 
 format:
   html:

@@ -1,3 +1,28 @@
 ﻿Question,Answer
+NCLM,Non-Controlled Legend Medication
+ACEi,Angiotensin I Converting Enzyme Inhibitor
+ARB,Angiotensin II Receptor Blocker
+PPI,Proton Pump Inhibitor
+GERD ,Gastroesophageal Reflux Disease
+SSRI,Selective Serotonin Re-uptake inhibitor
+SNRI,Serotonin Norepinephrine Re-uptake inhibitor
+APAP,acetaminophen
+HCTZ,Hydrochlorothiazide
+H#RA,Histamine H# Receptor Antagonist
+NSAID,Non-steroidal Anti-inflammatory Drug
+ADHD,Attention Deficit Hyperactivity Disorder
 Generic: Lisinopril,Brand: Prinivil. Class: ACEi. Indication: Antihypertensive. Schedule: NCLM. 
-Generic: Metformin,Brand: Glucophage. Class: Biguanide. Indication: Diabetes medication. Schedule: NCLM.
+Metformin,"Glucophage, Biguanide, Diabetes medication, NCLM."
+Generic: Metoprolol Succinate ER,"Toprol XL. Beta-blocker, Antihypertensive, NCLM"
+Losartan potassium,"Cozaar, ARB, Antihypertensive, NCLM"
+Hydrochlorothiazide,"Microzide, Thiazide diuretic, Antihypertensive, NCLM"
+Atorvastatin,"Lipitor, HMG-CoA Reductase Inhibitor, Cholesterol lowering, NCLM"
+Amiodipine,"Norvasc, Calcium Channel Blocker, Antihypertensive, NCLM"
+Omeprazole,"Prilosec, PPI, Acid-Reflux/GERD, OTC and NCLM (strength)"
+Albuterol,"ProAir HFA / Ventolin HFA, Beta agonist, Bronchodilator/asthma, NCLM"
+Hydrocodone/APAP,"Vicodin/Norco/Lortab, Opioid analgesic combo, Pain reliever, Schedule II"
+Levothyroxine,"Synthroid/Levoxyl, Thyroid hormone, Hypothyroidism, NCLM"
+Metoprolol tartate,"Lopressor, Beta-blocker, Antihypertensive, NCLM"
+Simvastatin,"Zocor, HMG-CoA Reductase Inhibitor, Cholesterol lowering, NCLM"
+Gabapentin,"Neurontin, Anticonvulsant, Neuropathic pain/seizures, NCLM (Schedule V in some states)"
+Sertraline,"Zoloft, SSRI, Antidepressant, NCLM"

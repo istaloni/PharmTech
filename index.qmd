@@ -1,0 +1,12 @@
+---
+title: "PharmTech"
+listing:
+  contents: posts
+  sort: date desc
+  type: default
+  categories: true
+---
+
+Karl Marquez
+
+This website is for my pharmacy tech study

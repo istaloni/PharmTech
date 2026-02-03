@@ -7,20 +7,6 @@ format: html
 
 # Top 200 Medications
 
-## Flashcards legend / abbreviation
-
-NCLM = Non-controlled Legend Medication  
-ACEi = Angiotensin I Converting Enzyme Inhibitor  
-ARB = Angiotensin II Receptor Blocker  
-PPI = Proton pump inhibitor  
-GERD = Gastroesophageal Reflux Disease  
-SSRI = Selective Serotonin Re-uptake inhibitor  
-SNRI = Serotonin Norepinephrine Re-uptake inhibitor  
-APAP = Acetaminophen  
-HCTZ = Hydrochlorothiazide  
-NSAID = Non-steroidal Anti-inflammatory Drug  
-ADHD = Attention Deficit Hyperactivity Disorder  
-H1RA = Histamine H1 Receptor Agonist 
 
 
 ```{ojs}
@@ -129,3 +115,24 @@ viewof controls = {
 }
 
 ```
+
+
+
+## Flashcards legend / abbreviation
+
+NCLM = Non-controlled Legend Medication  
+ACEi = Angiotensin I Converting Enzyme Inhibitor  
+ARB = Angiotensin II Receptor Blocker  
+PPI = Proton pump inhibitor  
+GERD = Gastroesophageal Reflux Disease  
+SSRI = Selective Serotonin Re-uptake inhibitor  
+SNRI = Serotonin Norepinephrine Re-uptake inhibitor  
+APAP = Acetaminophen  
+HCTZ = Hydrochlorothiazide  
+NSAID = Non-steroidal Anti-inflammatory Drug  
+ADHD = Attention Deficit Hyperactivity Disorder  
+H1RA = Histamine H1 Receptor Agonist 
+
+
+
+

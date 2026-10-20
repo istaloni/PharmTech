@@ -1,0 +1,236 @@
+id,category,question,answer
+interactions-side-effects-001,Interactions & Side Effects,"Warfarin + vitamin K-rich foods (kale, broccoli)?",Vitamin K reduces warfarin's effect. Patients keep intake consistent; INR is monitored.
+interactions-side-effects-002,Interactions & Side Effects,Antidote for warfarin overdose?,Phytonadione (vitamin K).
+interactions-side-effects-003,Interactions & Side Effects,Antidote for heparin overdose?,Protamine sulfate.
+interactions-side-effects-004,Interactions & Side Effects,Treatment for theophylline overdose?,Activated charcoal.
+interactions-side-effects-005,Interactions & Side Effects,Reversal agent for opioid overdose?,Naloxone (Narcan).
+interactions-side-effects-006,Interactions & Side Effects,Signs of opioid overdose?,"Pinpoint pupils, slowed or stopped breathing, pale or blue skin, limp or unresponsive."
+interactions-side-effects-007,Interactions & Side Effects,"Xarelto (rivaroxaban) + ibuprofen, naproxen, or aspirin?",Avoid: NSAIDs add bleeding risk. Acetaminophen is the safer pain reliever.
+interactions-side-effects-008,Interactions & Side Effects,Clopidogrel + omeprazole?,Omeprazole (and esomeprazole) reduce clopidogrel's antiplatelet effect.
+interactions-side-effects-009,Interactions & Side Effects,Statins + grapefruit juice?,Grapefruit raises statin blood levels; avoid large amounts. Statins can also cause muscle pain.
+interactions-side-effects-010,Interactions & Side Effects,Metronidazole + alcohol?,"Avoid alcohol: abdominal cramps, nausea, vomiting, headache, flushing."
+interactions-side-effects-011,Interactions & Side Effects,What is disulfiram (Antabuse)?,"Alcohol-dependence deterrent: any alcohol causes an immediate, very unpleasant reaction."
+interactions-side-effects-012,Interactions & Side Effects,Rifampin + oral contraceptives?,Rifampin reduces birth control effectiveness; patients should use backup contraception.
+interactions-side-effects-013,Interactions & Side Effects,Acetaminophen + alcohol?,Alcohol increases acetaminophen's liver toxicity.
+interactions-side-effects-014,Interactions & Side Effects,Pseudoephedrine in a patient with hypertension?,Avoid: it is a vasoconstrictor and can raise blood pressure.
+interactions-side-effects-015,Interactions & Side Effects,Prednisone in a patient with diabetes?,Corticosteroids can raise blood sugar (hyperglycemia).
+interactions-side-effects-016,Interactions & Side Effects,"Common side effect of inhaled corticosteroids, and how to prevent it?",Oral thrush (candidiasis). Rinse mouth with water after each use.
+interactions-side-effects-017,Interactions & Side Effects,Doxycycline / tetracycline side effects?,Photosensitivity (use sun protection); tooth discoloration in young children; skin and nail darkening.
+interactions-side-effects-018,Interactions & Side Effects,Phenazopyridine (Pyridium)?,Urinary tract pain reliever; turns urine orange/red. Add an auxiliary label.
+interactions-side-effects-019,Interactions & Side Effects,Patient allergic to sulfa drugs: which top-200 antibiotic to avoid?,"Bactrim (sulfamethoxazole / trimethoprim), a sulfonamide."
+interactions-side-effects-020,Interactions & Side Effects,Patient allergic to penicillin: can they take Augmentin?,No. Augmentin contains amoxicillin (a beta-lactam penicillin).
+interactions-side-effects-021,Interactions & Side Effects,"Penicillin allergy and cephalosporins (e.g., cephalexin)?",Small cross-sensitivity risk (often quoted 1-10%) because both have a beta-lactam ring.
+interactions-side-effects-022,Interactions & Side Effects,Amoxicillin: diarrhea vs. hives. Which is a true allergy?,Hives or swelling = true allergy. Diarrhea = side effect.
+interactions-side-effects-023,Interactions & Side Effects,Codeine allergy: which related opioid may cross-react?,"Hydrocodone (e.g., Hycodan = hydrocodone / homatropine)."
+interactions-side-effects-024,Interactions & Side Effects,What is therapeutic duplication? Give examples.,"Two drugs of the same class: omeprazole + Nexium, Lipitor + Zocor, citalopram + sertraline, fluticasone + mometasone."
+interactions-side-effects-025,Interactions & Side Effects,What is therapeutic substitution?,"Swapping in a different drug of the same class, e.g., Zocor (simvastatin) to pravastatin."
+interactions-side-effects-026,Interactions & Side Effects,What causes serotonin syndrome?,"Combining serotonergic drugs, e.g., an SSRI + SNRI (escitalopram + duloxetine) or with tramadol."
+interactions-side-effects-027,Interactions & Side Effects,Which OTC antihistamine is most linked to impaired driving?,Diphenhydramine (Benadryl).
+interactions-side-effects-028,Interactions & Side Effects,Common side effects of lisinopril?,Low blood pressure and dizziness; dry cough. Avoid in pregnancy.
+interactions-side-effects-029,Interactions & Side Effects,Common side effects of rizatriptan (Maxalt)?,Drowsiness and dizziness.
+interactions-side-effects-030,Interactions & Side Effects,Which drug has a boxed warning for fatal skin rash?,Lamotrigine (Lamictal).
+interactions-side-effects-031,Interactions & Side Effects,Which drugs have a boxed warning for tendon rupture?,"Fluoroquinolones: ciprofloxacin, levofloxacin."
+interactions-side-effects-032,Interactions & Side Effects,Boxed warning shared by antidepressants?,Increased suicidal thoughts in children and young adults.
+interactions-side-effects-033,Interactions & Side Effects,Which capsules contain peanut oil?,"Prometrium (progesterone), and injectable progesterone."
+interactions-side-effects-034,Interactions & Side Effects,Common side effect of calcium supplements?,Constipation.
+interactions-side-effects-035,Interactions & Side Effects,St. John's wort is used as what?,A mild herbal antidepressant.
+storage-stability-001,Storage & Stability,Room temperature range?,20-25 °C (68-77 °F).
+storage-stability-002,Storage & Stability,Refrigerator range?,2-8 °C (36-46 °F).
+storage-stability-003,Storage & Stability,Freezer range?,-25 to -10 °C (-13 to 14 °F).
+storage-stability-004,Storage & Stability,Which vaccines are refrigerated vs. frozen?,"Refrigerate: Boostrix, Havrix, Shingrix. Freeze: Varivax."
+storage-stability-005,Storage & Stability,Amoxicillin suspension after mixing?,Room temp or fridge; discard after 14 days.
+storage-stability-006,Storage & Stability,Augmentin suspension after mixing?,Refrigerate; discard after 10 days.
+storage-stability-007,Storage & Stability,Cephalexin suspension after mixing?,Refrigerate; discard after 14 days.
+storage-stability-008,Storage & Stability,Azithromycin and cefdinir suspensions after mixing?,Room temp or fridge; discard after 10 days.
+storage-stability-009,Storage & Stability,Clindamycin oral solution after mixing?,Room temperature (do not refrigerate); discard after 14 days.
+storage-stability-010,Storage & Stability,Cefuroxime (Ceftin) suspension after mixing?,Refrigerate; discard after 10 days.
+storage-stability-011,Storage & Stability,Penicillin VK suspension after mixing?,Refrigerate; discard after 14 days. Take 1 hour before or 2 hours after meals.
+storage-stability-012,Storage & Stability,Clarithromycin (Biaxin) suspension?,Room temperature only; discard after 14 days.
+storage-stability-013,Storage & Stability,Insulin storage: unopened vs. in use?,"Unopened: refrigerate, never freeze. In use: room temp, typically 28 days (Levemir 42)."
+storage-stability-014,Storage & Stability,Ozempic storage?,Before first use: refrigerate. After first use: up to 56 days.
+storage-stability-015,Storage & Stability,Latanoprost (Xalatan) storage?,Unopened: refrigerate. Opened: room temp up to 6 weeks.
+storage-stability-016,Storage & Stability,NuvaRing storage?,Pharmacy: refrigerate. After dispensing: room temp up to 4 months.
+storage-stability-017,Storage & Stability,Gabapentin oral solution storage?,Refrigerate.
+storage-stability-018,Storage & Stability,Advair Diskus after opening the foil pouch?,Discard after 1 month.
+storage-stability-019,Storage & Stability,Asmanex Twisthaler (mometasone) after opening the pouch?,Discard after 45 days.
+storage-stability-020,Storage & Stability,BenzaClin gel (clindamycin / benzoyl peroxide) after compounding?,3 months at room temperature.
+storage-stability-021,Storage & Stability,Which products must stay in their original container?,"Nitrostat, Singulair, Trileptal suspension, ODTs, Micardis, Neoral, chewable tablets."
+storage-stability-022,Storage & Stability,Nitroglycerin SL tablet storage?,"Original glass bottle, cap screwed tight, room temp away from heat, moisture, and light."
+storage-stability-023,Storage & Stability,Four main factors that degrade drugs?,"Temperature, moisture, light, air."
+storage-stability-024,Storage & Stability,Signs a liquid suspension or syrup has degraded?,"Crystals forming, bottle bulging from gas."
+storage-stability-025,Storage & Stability,"Signs a sterile liquid (injection, eye drop) has degraded?","Color change, cloudiness, surface film."
+storage-stability-026,Storage & Stability,Signs a cream or suppository has degraded?,"Cream: separation or texture change. Suppository: too soft, too hard, or dry."
+storage-stability-027,Storage & Stability,"Expiration date with only a month printed (e.g., 2028-MAR)?",Good through the last day of that month.
+storage-stability-028,Storage & Stability,Expiration date for repackaged (unit-dose) drugs?,"1 year from repackaging or the manufacturer's date, whichever is sooner."
+storage-stability-029,Storage & Stability,What is a beyond-use date (BUD)?,"The date after which a compounded, reconstituted, or opened product should not be used."
+storage-stability-030,Storage & Stability,Where does the package insert list reconstitution stability?,The 'How Supplied / Storage and Handling' section.
+dosage-forms-administration-001,Dosage Forms & Administration,Metoprolol succinate ER vs. metoprolol tartrate dosing?,"Succinate ER (Toprol XL): once daily, 50-200 mg. Tartrate (Lopressor): usually twice daily."
+dosage-forms-administration-002,Dosage Forms & Administration,How should levothyroxine be taken?,"Empty stomach, 30-60 min before breakfast, or at bedtime 3-4 h after the last meal."
+dosage-forms-administration-003,Dosage Forms & Administration,Alendronate (Fosamax) administration?,Full glass of water; stay upright at least 30 min and until after the first food of the day.
+dosage-forms-administration-004,Dosage Forms & Administration,Scopolamine patch?,Transdermal patch for motion sickness; change every 3 days.
+dosage-forms-administration-005,Dosage Forms & Administration,Fentanyl (Duragesic) patch strengths are in?,"Micrograms (mcg), not mg."
+dosage-forms-administration-006,Dosage Forms & Administration,Forms sumatriptan is available in?,"Tablet, nasal spray, injection (no syrup)."
+dosage-forms-administration-007,Dosage Forms & Administration,Forms acetaminophen is available in?,"Oral liquid, tablet, chewable, suppository, injection."
+dosage-forms-administration-008,Dosage Forms & Administration,Digoxin forms and strengths?,Tablets 62.5 / 125 / 250 mcg; oral solution 0.05 mg/mL; injection 0.1 or 0.25 mg/mL. No SL tablet.
+dosage-forms-administration-009,Dosage Forms & Administration,Xanax IR tablet strengths?,"0.25, 0.5, 1, and 2 mg."
+dosage-forms-administration-010,Dosage Forms & Administration,Augmentin dosage forms?,Oral only: tablets and powder for oral suspension.
+dosage-forms-administration-011,Dosage Forms & Administration,Retin-A (tretinoin) forms?,Topical cream or gel.
+dosage-forms-administration-012,Dosage Forms & Administration,Can ER or EC tablets be crushed?,No. ER releases drug over 12-24 h; EC protects the stomach and dissolves in the intestine.
+dosage-forms-administration-013,Dosage Forms & Administration,Sublingual tablets?,"Dissolve under the tongue for fast absorption, bypassing the GI tract (e.g., nitroglycerin)."
+dosage-forms-administration-014,Dosage Forms & Administration,Effervescent tablets?,Dissolve in water before taking (they release CO2).
+dosage-forms-administration-015,Dosage Forms & Administration,Can eye drops go in ears? Ear drops in eyes?,Ophthalmic drops can be used in ears; otic drops never in eyes.
+dosage-forms-administration-016,Dosage Forms & Administration,What does 'parenteral' mean?,"Given by injection (IV, IM, SC); must be sterile."
+dosage-forms-administration-017,Dosage Forms & Administration,The 5 rights of medication administration?,"Right patient, right drug, right dose, right route, right time."
+controlled-substances-dea-001,Controlled Substances & DEA,Schedule I?,"No accepted medical use (heroin, LSD)."
+controlled-substances-dea-002,Controlled Substances & DEA,Schedule II examples?,"Highest abuse potential with medical use: oxycodone, fentanyl, morphine, Adderall, methylphenidate."
+controlled-substances-dea-003,Controlled Substances & DEA,Schedule III examples?,"Buprenorphine, ketamine, testosterone / anabolic steroids."
+controlled-substances-dea-004,Controlled Substances & DEA,Schedule IV examples?,"Benzodiazepines (alprazolam, diazepam), zolpidem, tramadol."
+controlled-substances-dea-005,Controlled Substances & DEA,Schedule V examples?,"Lomotil (diphenoxylate / atropine), pregabalin, low-dose codeine cough syrups."
+controlled-substances-dea-006,Controlled Substances & DEA,Refills allowed for C-II?,None. A new prescription is needed each time.
+controlled-substances-dea-007,Controlled Substances & DEA,Refills allowed for C-III and C-IV?,Up to 5 refills within 6 months of the date written.
+controlled-substances-dea-008,Controlled Substances & DEA,Refills allowed for C-V and non-controlled Rx?,As authorized by the prescriber (non-controlled: typically valid 1 year).
+controlled-substances-dea-009,Controlled Substances & DEA,Transferring C-III to C-V refills?,"Once only, unless the pharmacies share a real-time online database."
+controlled-substances-dea-010,Controlled Substances & DEA,Transferring C-II prescriptions?,"C-II refills don't exist, so there's nothing to transfer. Since 2023, an unfilled electronic C-II Rx may be transferred once for its initial fill."
+controlled-substances-dea-011,Controlled Substances & DEA,How long are C-III to C-V prescriptions valid?,6 months from the date written.
+controlled-substances-dea-012,Controlled Substances & DEA,DEA Form 222?,Ordering (and returning) Schedule II drugs on paper. Electronic version: CSOS.
+controlled-substances-dea-013,Controlled Substances & DEA,DEA Form 106?,Reporting theft or significant loss (incl. disaster loss). Notify DEA within 1 business day; file within 45 days.
+controlled-substances-dea-014,Controlled Substances & DEA,DEA Form 41?,"Documenting destruction of controlled substances (e.g., by a reverse distributor)."
+controlled-substances-dea-015,Controlled Substances & DEA,How often is a controlled-substance inventory required by federal law?,"Every 2 years (biennial). C-II exact count; C-III to C-V may be estimated (exact if bottle > 1,000 units)."
+controlled-substances-dea-016,Controlled Substances & DEA,How long must controlled-substance records be kept (federal)?,At least 2 years.
+controlled-substances-dea-017,Controlled Substances & DEA,Paper prescription filing options?,3 files (C-II / C-III to C-V / non-controlled) or 2 files (C-II / everything else).
+controlled-substances-dea-018,Controlled Substances & DEA,Required on a controlled-substance Rx label?,"Pharmacy name and address, serial number, date of fill, patient and prescriber names, directions, cautionary statements."
+controlled-substances-dea-019,Controlled Substances & DEA,DEA number format?,2 letters + 7 digits. 1st letter = registrant type; 2nd = first letter of prescriber's last name.
+controlled-substances-dea-020,Controlled Substances & DEA,How do you check a DEA number by hand?,(1st+3rd+5th digits) + 2 x (2nd+4th+6th). The last digit of that sum must match the 7th digit.
+controlled-substances-dea-021,Controlled Substances & DEA,Check DEA number ML1467984.,1+6+9 = 16; (4+7+8) x 2 = 38; 16+38 = 54. Last digit 4 = check digit 4. Valid.
+controlled-substances-dea-022,Controlled Substances & DEA,Pseudoephedrine purchase limits?,"3.6 g per day and 9 g per 30 days; photo ID and a logbook required (Combat Methamphetamine Epidemic Act, 2005)."
+controlled-substances-dea-023,Controlled Substances & DEA,What is the PDMP?,Prescription Drug Monitoring Program: state database of controlled-substance fills to flag misuse and doctor shopping.
+controlled-substances-dea-024,Controlled Substances & DEA,Red flags for a forged prescription?,"Perfect handwriting, mixed ink or handwriting, odd quantities or directions, invalid DEA/NPI, no tamper-resistant features."
+controlled-substances-dea-025,Controlled Substances & DEA,Red flags for drug diversion at the counter?,"Many patients with scripts from one prescriber, one person dropping off for several names, distant doctors, PDMP shows a recent fill."
+laws-agencies-001,Laws & Agencies,FDA's role?,"Safety and efficacy of drugs, devices, and biologics: approval, labeling, recalls, MedWatch, boxed warnings."
+laws-agencies-002,Laws & Agencies,DEA's role?,"Enforces the Controlled Substances Act: scheduling, registration, theft reports, controlled-substance records."
+laws-agencies-003,Laws & Agencies,State Board of Pharmacy's role?,"Licenses pharmacists and techs; sets state rules such as tech-to-pharmacist ratios. When laws differ, follow the stricter one."
+laws-agencies-004,Laws & Agencies,NABP?,"National Association of Boards of Pharmacy: supports state boards, runs NAPLEX / MPJE and CPE Monitor. Does not enforce laws."
+laws-agencies-005,Laws & Agencies,ACPE?,Accredits PharmD programs and continuing education; techs need ACPE-accredited CE.
+laws-agencies-006,Laws & Agencies,Joint Commission?,Accredits hospitals and healthcare organizations; inspects medication safety and handling.
+laws-agencies-007,Laws & Agencies,ISMP?,"Institute for Safe Medication Practices: voluntary error reporting, high-alert drug list, error-prone abbreviations, LASA list."
+laws-agencies-008,Laws & Agencies,Examples on ISMP's high-alert medication list?,"Insulins, opioids, oral hypoglycemics, anticoagulants (warfarin, heparin), methotrexate, oral chemo, immunosuppressants, pediatric liquids."
+laws-agencies-009,Laws & Agencies,MedWatch vs. VAERS?,MedWatch: FDA reporting of adverse events and product problems. VAERS: vaccine adverse events only (FDA + CDC).
+laws-agencies-010,Laws & Agencies,What does an 'AB' rating in the Orange Book mean?,The generic is therapeutically equivalent to the brand and can be substituted.
+laws-agencies-011,Laws & Agencies,What is a REMS? Give examples.,"Risk Evaluation and Mitigation Strategy: clozapine (neutrophil monitoring), thalidomide and iPLEDGE / isotretinoin (pregnancy prevention)."
+laws-agencies-012,Laws & Agencies,iPLEDGE dispensing window?,Isotretinoin must be picked up within 7 days of the negative pregnancy test.
+laws-agencies-013,Laws & Agencies,NDC number format?,10-11 digits in 3 segments: labeler (manufacturer) - product (strength/form) - package size.
+laws-agencies-014,Laws & Agencies,"In NDC 00781-1506-10, what is each part?",00781 = manufacturer; 1506 = product; 10 = package size.
+laws-agencies-015,Laws & Agencies,Poison Prevention Packaging Act (1970)?,"Requires child-resistant packaging. Exceptions: SL nitroglycerin, or when the patient requests a waiver."
+laws-agencies-016,Laws & Agencies,Which drugs require a patient package insert with every fill?,Oral contraceptives (also estrogens).
+laws-agencies-017,Laws & Agencies,Durham-Humphrey Amendment (1951)?,Split drugs into OTC and legend (prescription-only).
+laws-agencies-018,Laws & Agencies,Kefauver-Harris Amendment (1962)?,Drugs must be proven effective (not just safe) before marketing; GMPs.
+laws-agencies-019,Laws & Agencies,Controlled Substances Act (1970)?,Created drug schedules I-V (DEA formed in 1973 to enforce it).
+laws-agencies-020,Laws & Agencies,Orphan Drug Act (1983)?,"Incentives for drugs for rare diseases (< 200,000 US patients): tax credits, 7-year exclusivity."
+laws-agencies-021,Laws & Agencies,Hatch-Waxman Act (1984)?,Created the generic drug approval pathway while restoring patent time for brands.
+laws-agencies-022,Laws & Agencies,OBRA '90?,Required DUR and an offer to counsel Medicaid patients; states extended counseling to all patients.
+laws-agencies-023,Laws & Agencies,HIPAA (1996)?,Protects patient health information (PHI).
+laws-agencies-024,Laws & Agencies,Examples of PHI?,"Name, birth date, address, SSN, diagnoses, payment information, full-face photos."
+laws-agencies-025,Laws & Agencies,FDA Modernization Act (1997)?,Changed the legend to 'Rx only' and sped up approvals.
+laws-agencies-026,Laws & Agencies,Medicare Modernization Act (2003)?,Created Medicare Part D (prescription drug coverage).
+laws-agencies-027,Laws & Agencies,Drug Supply Chain Security Act (DSCSA)?,"Tracks drugs from manufacturer to pharmacy (NDC, lot, expiration, serial number) to stop counterfeits."
+laws-agencies-028,Laws & Agencies,What does a DUR screen for?,"Drug-drug interactions, duplication, drug-disease contraindications, wrong dose or duration, allergies, misuse."
+laws-agencies-029,Laws & Agencies,OSHA's role in the pharmacy?,"Worker safety: PPE, training, Safety Data Sheets (SDS), bloodborne pathogen plan, eyewash stations."
+laws-agencies-030,Laws & Agencies,EPA / RCRA?,Regulate disposal of hazardous pharmaceutical waste to protect water supplies.
+laws-agencies-031,Laws & Agencies,NIOSH?,Publishes the list of hazardous drugs (antineoplastics and others) and PPE recommendations.
+laws-agencies-032,Laws & Agencies,Licensure vs. certification?,"Licensure (state) = legal permission to work. Certification (PTCB) = proof of competence, recognized nationally."
+laws-agencies-033,Laws & Agencies,PTCB recertification requirement?,20 CE hours every 2 years (including 1 hour of law and 1 hour of patient safety).
+laws-agencies-034,Laws & Agencies,FDA drug approval phases?,"Phase 1: few healthy volunteers (safety, dosing). Phase 2: hundreds of patients (dose, efficacy). Phase 3: thousands, randomized. Phase 4: post-marketing surveillance."
+prescription-processing-001,Prescription Processing,Required elements of a prescription?,"Patient name and DOB; prescriber name, address, signature; date; drug, strength, form, quantity, directions (sig), refills."
+prescription-processing-002,Prescription Processing,"DAW 0, 1, and 2?",0 = generic substitution allowed. 1 = brand medically necessary (prescriber). 2 = patient requests brand.
+prescription-processing-003,Prescription Processing,Who verifies a prescription?,"Pharmacist only: final check of every element, interactions, contraindications."
+prescription-processing-004,Prescription Processing,What can a tech do at pickup?,"Verify name and DOB, confirm the quantity, and refer clinical questions to the pharmacist for counseling."
+prescription-processing-005,Prescription Processing,What is adjudication?,Submitting a claim to insurance and getting an instant response.
+prescription-processing-006,Prescription Processing,Common claim rejections?,"Refill too soon, prior authorization required, not covered, invalid ID."
+prescription-processing-007,Prescription Processing,Trailing and leading zero rules?,Never use a trailing zero (1.0 mg). Always use a leading zero (0.5 mg).
+prescription-processing-008,Prescription Processing,Error-prone abbreviations to avoid?,"AD/AS/AU vs. OD/OS/OU, QD vs. QID vs. QOD, HS vs. hs, SS / SSI, U for units."
+prescription-processing-009,Prescription Processing,Look-alike/sound-alike pairs?,"Bupropion / buspirone, prednisone / prednisolone, nifedipine / niCARdipine, hydroxyzine / hydralazine, glyburide / glipizide."
+prescription-processing-010,Prescription Processing,Using tall man letters?,Capitalize the differing part (hydrOXYzine / hydrALAZINE) to reduce mix-ups.
+prescription-processing-011,Prescription Processing,"PO, SL, IM, SC/SQ, TD?","By mouth, under the tongue, into a muscle, under the skin, through the skin (patch)."
+prescription-processing-012,Prescription Processing,"OD, OS, OU?","Right eye, left eye, both eyes."
+prescription-processing-013,Prescription Processing,"AD, AS, AU?","Right ear, left ear, both ears."
+prescription-processing-014,Prescription Processing,"PR, PV?","Rectally, vaginally."
+prescription-processing-015,Prescription Processing,"QD, QOD, BID, TID, QID?","Daily, every other day, twice, three times, four times daily."
+prescription-processing-016,Prescription Processing,"QHS / HS, AC, PC, PRN?","At bedtime, before meals, after meals, as needed."
+prescription-processing-017,Prescription Processing,"QAM, QPM, Q4H?","Every morning, every evening, every 4 hours."
+prescription-processing-018,Prescription Processing,"STAT, UD, UAT/TAT, WA?","Immediately, as directed, until all taken, while awake."
+prescription-processing-019,Prescription Processing,"C with bar, S with bar?","With, without."
+prescription-processing-020,Prescription Processing,"gtt, susp, soln, supp, ung?","Drop, suspension, solution, suppository, ointment."
+prescription-processing-021,Prescription Processing,"ODT, ER/XR, DR, EC, SR?","Orally disintegrating tablet, extended release, delayed release, enteric coated, sustained release."
+prescription-processing-022,Prescription Processing,"QS, NR, DAW?","Quantity sufficient, no refills, dispense as written."
+prescription-processing-023,Prescription Processing,Translate: 1 tab PO BID PRN pain x 7d,Take 1 tablet by mouth twice daily as needed for pain for 7 days.
+calculations-conversions-001,Calculations & Conversions,"1 tsp, 1 tbsp, 1 fl oz in mL?","5 mL, 15 mL, 30 mL (exactly 29.57)."
+calculations-conversions-002,Calculations & Conversions,"1 pint, 1 quart, 1 gallon in mL?","Pint 473 (480) mL; quart 946 mL; gallon 3,785 mL (3.8 L)."
+calculations-conversions-003,Calculations & Conversions,1 gallon = how many pints / quarts / fl oz?,"8 pints, 4 quarts, 128 fl oz."
+calculations-conversions-004,Calculations & Conversions,1 kg in lb? 1 lb in g?,2.2 lb; 454 g (16 oz).
+calculations-conversions-005,Calculations & Conversions,1 oz in g? 1 grain in mg?,~30 g (28.35); 64.8 mg (often rounded to 65).
+calculations-conversions-006,Calculations & Conversions,1 mL = how many drops (standard)?,20 drops (gtts).
+calculations-conversions-007,Calculations & Conversions,"Metric: kg, g, mg, mcg?","1 kg = 1,000 g; 1 g = 1,000 mg; 1 mg = 1,000 mcg."
+calculations-conversions-008,Calculations & Conversions,"Roman numerals ss, V, X, L, C, D, M?","1/2, 5, 10, 50, 100, 500, 1000."
+calculations-conversions-009,Calculations & Conversions,"°F to °C, and °C to °F?",°C = (°F - 32) x 5/9. °F = (°C x 9/5) + 32.
+calculations-conversions-010,Calculations & Conversions,Daily dose formula?,Dose x frequency per day.
+calculations-conversions-011,Calculations & Conversions,Day supply formula?,Quantity dispensed / daily dose.
+calculations-conversions-012,Calculations & Conversions,Rx: 3 tabs BID x 14 days. Quantity?,6 tabs/day x 14 = 84 tablets.
+calculations-conversions-013,Calculations & Conversions,"Rx: 1 tsp QID, #120 mL. Day supply?","20 mL/day, so 6 days."
+calculations-conversions-014,Calculations & Conversions,Clark's rule?,Child dose = (weight in lb / 150) x adult dose.
+calculations-conversions-015,Calculations & Conversions,Young's rule?,Child dose = [age / (age + 12)] x adult dose.
+calculations-conversions-016,Calculations & Conversions,BSA dosing?,Child dose = (BSA in m² / 1.73) x adult dose.
+calculations-conversions-017,Calculations & Conversions,"Child 47 lb, 30 mg/kg/day in 2 doses. Each dose?",47 / 2.2 = 21.4 kg; x 30 = 642 mg/day; 321 mg per dose.
+calculations-conversions-018,Calculations & Conversions,What does 1% w/v mean?,1 g of drug in 100 mL.
+calculations-conversions-019,Calculations & Conversions,How many g of NaCl in 300 mL of a 10% solution?,30 g.
+calculations-conversions-020,Calculations & Conversions,Express 1:5000 as a percent.,0.02%.
+calculations-conversions-021,Calculations & Conversions,Dilution formula?,C1 x V1 = C2 x V2.
+calculations-conversions-022,Calculations & Conversions,Make 250 mL of 20% KCl from 40% stock. How much stock?,125 mL of 40% stock (+ 125 mL diluent).
+calculations-conversions-023,Calculations & Conversions,Alligation: 420 mL of 4% from 1% and 8% stock?,"8%: 3 parts, 1%: 4 parts (7 total). 180 mL of 8% + 240 mL of 1%."
+calculations-conversions-024,Calculations & Conversions,"Flow rate: 2 L over 48 h, in mL/h?","2,000 / 48 = 41.7 mL/h."
+calculations-conversions-025,Calculations & Conversions,"250 mL over 3 h at 20 gtt/mL, in gtt/min?","5,000 gtt / 180 min = 27.8 gtt/min."
+calculations-conversions-026,Calculations & Conversions,Specific gravity?,Density of a liquid / density of water (1 g/mL). Weight (g) = volume (mL) x SG.
+calculations-conversions-027,Calculations & Conversions,Brand vs. generic reimbursement basis?,Brand: based on AWP (average wholesale price). Generic: MAC (maximum allowable cost) + dispensing fee.
+calculations-conversions-028,Calculations & Conversions,"Reorder: stock 50, reorder point 60, PAR 200, bottles of 100. Order?",Need 150 to reach PAR: order 2 bottles.
+compounding-001,Compounding,Compounding vs. manufacturing?,Compounding is patient-specific per prescription; manufacturing makes products for general resale.
+compounding-002,Compounding,Reconstitution?,Adding diluent to a commercial powder; no compounding record needed.
+compounding-003,Compounding,"USP <795>, <797>, <800>?",<795> nonsterile compounding; <797> sterile compounding; <800> hazardous drug handling.
+compounding-004,Compounding,Master formulation record vs. compounding record?,"Master = the recipe. Compounding record = what was actually made for this patient (lots, quantities, who made and checked it)."
+compounding-005,Compounding,"Trituration, levigation, spatulation?",Grinding to fine powder; making a paste (wet trituration); mixing with a spatula.
+compounding-006,Compounding,Nonsterile BUDs (classic USP <795>)?,Water-containing oral: 14 days refrigerated. Water-containing topical: 30 days. Nonaqueous: 6 months. (The 2023 revision changed some limits.)
+compounding-007,Compounding,Measuring liquids accurately?,Use the smallest graduated cylinder that holds the volume; read at eye level at the bottom of the meniscus.
+compounding-008,Compounding,ISO class needed in a PEC (hood)?,ISO Class 5 with HEPA filtration.
+compounding-009,Compounding,Buffer room and ante room ISO classes?,Buffer: at least ISO 7. Ante: at least ISO 8 (ISO 7 if it opens to a hazardous buffer room).
+compounding-010,Compounding,Pressure for sterile vs. hazardous compounding rooms?,Positive pressure normally; negative pressure for hazardous drugs (at least 12 air changes per hour).
+compounding-011,Compounding,How far inside the hood should you work?,At least 6 inches from the edge.
+compounding-012,Compounding,"NS, 1/2 NS, D5W?","0.9% NaCl, 0.45% NaCl, 5% dextrose in water."
+compounding-013,Compounding,TPN?,"Total parenteral nutrition: IV proteins, fats, carbs, electrolytes, and vitamins."
+compounding-014,Compounding,Cleaning a compounding area?,Alcohol for surfaces; bleach (deactivating agent) for cytotoxic residue.
+compounding-015,Compounding,Final check vs. sign-off?,Final check: pharmacist verifies the compound was made correctly. Sign-off: pharmacist compares it to the prescription and signs.
+inventory-workplace-safety-001,Inventory & Workplace Safety,"Class I, II, III recalls?",I: may cause serious harm or death. II: temporary or reversible harm. III: unlikely to cause harm (labeling or manufacturing violation).
+inventory-workplace-safety-002,Inventory & Workplace Safety,Market withdrawal?,Firm removes a product for a minor issue not subject to FDA action.
+inventory-workplace-safety-003,Inventory & Workplace Safety,Steps for handling a recall?,"Pull product, match lot numbers, quarantine, return or destroy per instructions, document, notify patients if needed."
+inventory-workplace-safety-004,Inventory & Workplace Safety,Stock rotation rule?,"First in, first out: shortest-dated stock in front."
+inventory-workplace-safety-005,Inventory & Workplace Safety,Return-to-stock after an unclaimed Rx?,"Typically after 7-14 days; check packaging and dates, remove patient info, update inventory."
+inventory-workplace-safety-006,Inventory & Workplace Safety,Can a pharmacy re-dispense meds a patient returns?,No. Keep them separate and dispose of them through take-back or policy.
+inventory-workplace-safety-007,Inventory & Workplace Safety,Reverse distributor?,Licensed company that handles returns and destruction; for controlled substances it must be DEA-registered.
+inventory-workplace-safety-008,Inventory & Workplace Safety,Waste bin colors?,Blue / white: most drugs. Black: hazardous (RCRA). Yellow: trace chemo. Red / sharps container: needles.
+inventory-workplace-safety-009,Inventory & Workplace Safety,Home disposal of unused medications?,"Take-back site or DEA Take Back Day; otherwise mix with coffee grounds or cat litter, seal in a bag, put in trash (unless on the FDA flush list)."
+inventory-workplace-safety-010,Inventory & Workplace Safety,PAR level and reorder point?,PAR: target stock to keep on hand. Reorder point: the level that triggers an order.
+inventory-workplace-safety-011,Inventory & Workplace Safety,Perpetual inventory?,Inventory updated in real time as items are sold and received.
+inventory-workplace-safety-012,Inventory & Workplace Safety,Who chooses hospital formulary drugs?,The Pharmacy & Therapeutics (P&T) committee.
+inventory-workplace-safety-013,Inventory & Workplace Safety,Handwashing guidance?,"Soap and water, at least 20 seconds (longer before sterile compounding). Gloves don't replace handwashing."
+inventory-workplace-safety-014,Inventory & Workplace Safety,What's in an SDS (formerly MSDS)?,Hazards of a chemical and what to do if exposed (OSHA right-to-know).
+inventory-workplace-safety-015,Inventory & Workplace Safety,Bloodborne pathogen plan?,"Employer must update it yearly and provide PPE, hepatitis B vaccine, and post-exposure care."
+billing-insurance-001,Billing & Insurance,"Medicare Parts A, B, C, D?",A: hospital. B: outpatient / doctor visits. C: Medicare Advantage (private plans). D: prescription drugs.
+billing-insurance-002,Billing & Insurance,Medicare Part D out-of-pocket limit?,"Since 2025 the coverage gap ('doughnut hole') is gone; yearly out-of-pocket is capped ($2,100 in 2026)."
+billing-insurance-003,Billing & Insurance,Who qualifies for Medicare?,"Age 65+, certain disabilities, end-stage renal disease."
+billing-insurance-004,Billing & Insurance,Medicaid?,"Joint federal-state insurance for low-income people, pregnancy, disability, and children; benefits vary by state."
+billing-insurance-005,Billing & Insurance,TRICARE?,Federal coverage for active and retired military and their families.
+billing-insurance-006,Billing & Insurance,HMO vs. PPO vs. EPO?,"HMO: PCP plus referrals, in-network only. PPO: no PCP needed, out-of-network costs more. EPO: no referrals, but no out-of-network coverage."
+billing-insurance-007,Billing & Insurance,Workers' compensation?,Employer's insurer pays for care of an on-the-job injury.
+billing-insurance-008,Billing & Insurance,Formulary types?,Open: covers most drugs. Preferred / tiered: generic < preferred brand < non-preferred. Closed: only listed drugs.
+billing-insurance-009,Billing & Insurance,Prior authorization?,Prescriber must justify the drug before the plan covers it.
+billing-insurance-010,Billing & Insurance,Step therapy?,Patient must try cheaper drugs first before the plan covers the more expensive one.
+billing-insurance-011,Billing & Insurance,Quantity limit?,"Plan caps units per day supply (e.g., 30 tabs / 30 days for a once-daily drug)."
+billing-insurance-012,Billing & Insurance,"Copay, deductible, premium?",Copay: fixed amount per fill. Deductible: what you pay before coverage starts. Premium: monthly cost of the plan.
+billing-insurance-013,Billing & Insurance,What is a PBM?,"Pharmacy Benefit Manager: processes claims, negotiates prices, manages formularies to control costs."

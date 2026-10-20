@@ -1,13 +1,29 @@
-﻿Question,Answer
-NCLM,Non-Controlled Legend Medication
-ACEi,Angiotensin I Converting Enzyme Inhibitor
-ARB,Angiotensin II Receptor Blocker
-PPI,Proton Pump Inhibitor
-GERD ,Gastroesophageal Reflux Disease
-SSRI,Selective Serotonin Re-uptake inhibitor
-SNRI,Serotonin Norepinephrine Re-uptake inhibitor
-APAP,acetaminophen
+﻿abbreviation,meaning
+Rx,Prescription only (non-controlled legend medication)
+OTC,Over the counter
+C-II,Schedule II controlled substance (high abuse potential; no refills)
+C-III,Schedule III controlled substance
+C-IV,Schedule IV controlled substance
+C-V,Schedule V controlled substance (lowest abuse potential)
+ACE inhibitor,Angiotensin-converting enzyme inhibitor
+ARB,Angiotensin II receptor blocker
 HCTZ,Hydrochlorothiazide
-H#RA,Histamine H# Receptor Antagonist
-NSAID,Non-steroidal Anti-inflammatory Drug
-ADHD,Attention Deficit Hyperactivity Disorder
+APAP,Acetaminophen
+NSAID,Non-steroidal anti-inflammatory drug
+SSRI,Selective serotonin reuptake inhibitor
+SNRI,Serotonin-norepinephrine reuptake inhibitor
+NDRI,Norepinephrine-dopamine reuptake inhibitor
+SARI,Serotonin antagonist and reuptake inhibitor
+PPI,Proton pump inhibitor
+H1 / H2 antagonist,Histamine H1 / H2 receptor antagonist (blocker)
+SABA,Short-acting beta-2 agonist
+LABA,Long-acting beta-2 agonist
+LAMA,Long-acting muscarinic antagonist
+DPP-4,Dipeptidyl peptidase-4
+SGLT-2,Sodium-glucose cotransporter-2
+GLP-1,Glucagon-like peptide-1
+TZD,Thiazolidinedione
+GERD,Gastroesophageal reflux disease
+COPD,Chronic obstructive pulmonary disease
+BPH,Benign prostatic hyperplasia (enlarged prostate)
+ADHD,Attention deficit hyperactivity disorder

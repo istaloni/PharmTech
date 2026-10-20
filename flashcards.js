@@ -1,0 +1,172 @@
+// Shared flashcard engine for the PharmTech site.
+// Used from any post's {ojs} cell:
+//
+//   fc = import(new URL("../../flashcards.js", document.baseURI).href)   // then use fc.flashcards, fc.esc
+//   flashcards({ cards, modes, storageKey, idField, groupField, searchFields, invalidation })
+//
+// cards        array of row objects (e.g. from FileAttachment(...).csv())
+// modes        { key: { label, front: d => html, back: d => html, hideGroupOnFront } }  (first is the default)
+//              the current group (e.g. drug class) shows as a banner on each card; set
+//              hideGroupOnFront: true when the group is the answer being quizzed
+// storageKey   localStorage key for "Got it" progress (one per deck)
+// idField      column that uniquely identifies a card (default "id" or the row index)
+// groupField   optional column to filter by (e.g. "group" or "category")
+// groupLabel   label for that filter (default "Group")
+// groupings    optional list of ways to group the deck, first is the default:
+//              [{ label: "Drug class", field: "pharm_class", orderField: "class_order" }, ...]
+//              adds a "Group by" menu; orderField (optional) sets card and group order
+// searchFields columns the search box looks through
+// invalidation pass Observable's `invalidation` so keyboard shortcuts are cleaned up
+
+export const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+export function flashcards({
+  cards, modes, storageKey, idField, groupField, groupLabel = "Group", groupings,
+  subgroupField, searchFields, invalidation, placeholder = "Search"
+}) {
+  if (!groupings && groupField) groupings = [{ label: groupLabel, field: groupField }];
+  groupings = groupings || [];
+  const idOf = (d, k) => idField ? d[idField] : (d.id ?? String(k));
+  cards.forEach((d, k) => { d.__id = idOf(d, k); });
+
+  const load = () => { try { return new Set(JSON.parse(localStorage.getItem(storageKey) || "[]")); } catch { return new Set(); } };
+  const save = () => { try { localStorage.setItem(storageKey, JSON.stringify([...known])); } catch {} };
+  const known = load();
+
+  const fields = searchFields || Object.keys(cards[0] || {}).filter(k => k !== "__id");
+  const modeKeys = Object.keys(modes);
+
+  const ui = document.createElement("div");
+  ui.className = "fc-app";
+  ui.innerHTML = `
+    <div class="fc-controls">
+      ${modeKeys.length > 1 ? `<label>Mode <select class="fc-mode">${modeKeys.map(k => `<option value="${k}">${esc(modes[k].label)}</option>`).join("")}</select></label>` : ""}
+      ${groupings.length > 1 ? `<label>Group by <select class="fc-groupby">${groupings.map((g, k) => `<option value="${k}">${esc(g.label)}</option>`).join("")}</select></label>` : ""}
+      ${groupings.length ? `<label class="fc-grouplab"><span class="fc-grouplabel"></span> <select class="fc-group"></select></label>` : ""}
+      <label class="fc-searchlab">Search <input class="fc-search" type="search" placeholder="${esc(placeholder)}"></label>
+      <label class="fc-check"><input type="checkbox" class="fc-learning"> Only still learning</label>
+    </div>
+    <div class="fc-scene" tabindex="0" role="button" aria-label="Flashcard. Press space to flip.">
+      <div class="fc-card"><div class="fc-face fc-front"></div><div class="fc-face fc-back"></div></div>
+    </div>
+    <div class="fc-meta"><span class="fc-tag"></span></div>
+    <div class="fc-nav">
+      <button class="fc-prev" type="button">← Previous</button>
+      <span class="fc-count"></span>
+      <button class="fc-next" type="button">Next →</button>
+    </div>
+    <div class="fc-nav">
+      <button class="fc-learn" type="button">Still learning</button>
+      <button class="fc-know" type="button">Got it ✓</button>
+      <button class="fc-shuffle" type="button">Shuffle</button>
+      <button class="fc-reset" type="button">Reset progress</button>
+    </div>
+    <div class="fc-progress"><div class="fc-bar"></div></div>
+    <div class="fc-progress-text"></div>`;
+
+  const $ = s => ui.querySelector(s);
+  const mode = () => modes[$(".fc-mode")?.value || modeKeys[0]];
+  let deck = [], i = 0, flipped = false;
+  let order = cards.map((_, k) => k);
+  const grouping = () => groupings[+($(".fc-groupby")?.value || 0)];
+
+  // Fill the group menu for the current grouping, in that grouping's order
+  function setGrouping() {
+    const g = grouping();
+    if (!g) return;
+    const key = d => g.orderField ? d[g.orderField] : "";
+    order = cards.map((_, k) => k).sort((a, b) => String(key(cards[a])).localeCompare(String(key(cards[b]))) || a - b);
+    const values = [...new Set(order.map(k => cards[k][g.field]).filter(Boolean))];
+    $(".fc-grouplabel").textContent = groupings.length > 1 ? g.label : (g.label || "Group");
+    $(".fc-group").innerHTML = `<option value="">All</option>` + values.map(v => `<option>${esc(v)}</option>`).join("");
+  }
+
+  function build() {
+    const q = $(".fc-search").value.trim().toLowerCase();
+    const g = $(".fc-group")?.value || "";
+    const gf = grouping()?.field;
+    const onlyLearning = $(".fc-learning").checked;
+    deck = order.map(k => cards[k]).filter(d =>
+      (!g || d[gf] === g) &&
+      (!onlyLearning || !known.has(d.__id)) &&
+      (!q || fields.map(f => d[f]).join(" ").toLowerCase().includes(q)));
+    i = 0; flipped = false; render();
+  }
+
+  function render() {
+    $(".fc-card").classList.toggle("is-flipped", flipped);
+    if (!deck.length) {
+      $(".fc-front").innerHTML = `<div class="fc-row">No cards match. ${$(".fc-learning").checked ? "You've got them all! 🎉" : "Try clearing the search or filter."}</div>`;
+      $(".fc-back").innerHTML = "";
+      $(".fc-count").textContent = "0 / 0";
+      $(".fc-tag").textContent = "";
+    } else {
+      const d = deck[i], m = mode();
+      const cur = grouping();
+      const banner = cur && d[cur.field] ? `<div class="fc-classbar">${esc(d[cur.field])}</div>` : "";
+      $(".fc-front").innerHTML = (m.hideGroupOnFront ? "" : banner) + `<div class="fc-body">${m.front(d)}</div>`;
+      $(".fc-back").innerHTML = banner + `<div class="fc-body">${m.back(d)}</div>`;
+      $(".fc-count").textContent = `${i + 1} / ${deck.length}`;
+      const tagFields = cur ? groupings.filter(x => x !== cur).map(x => x.field) : [];
+      if (subgroupField) tagFields.push(subgroupField);
+      const tag = [...new Set(tagFields.map(f => d[f]).filter(Boolean))].map(esc).join(" · ");
+      $(".fc-tag").innerHTML = tag + (known.has(d.__id) ? `${tag ? " · " : ""}<strong class="fc-known">Got it ✓</strong>` : "");
+    }
+    const pct = cards.length ? Math.round(100 * known.size / cards.length) : 0;
+    $(".fc-bar").style.width = pct + "%";
+    $(".fc-progress-text").textContent = `${known.size} of ${cards.length} cards mastered (${pct}%)`;
+  }
+
+  const go = step => { if (!deck.length) return; i = (i + step + deck.length) % deck.length; flipped = false; render(); };
+  const flip = () => { if (!deck.length) return; flipped = !flipped; render(); };
+  const mark = isKnown => {
+    if (!deck.length) return;
+    const d = deck[i];
+    isKnown ? known.add(d.__id) : known.delete(d.__id);
+    save();
+    if ($(".fc-learning").checked && isKnown) {        // drop it from the drill deck
+      deck.splice(i, 1);
+      if (i >= deck.length) i = 0;
+      flipped = false; render();
+    } else go(1);
+  };
+  const shuffle = () => {
+    for (let k = order.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [order[k], order[j]] = [order[j], order[k]]; }
+    build();
+  };
+
+  $(".fc-scene").onclick = flip;
+  $(".fc-prev").onclick = () => go(-1);
+  $(".fc-next").onclick = () => go(1);
+  $(".fc-know").onclick = () => mark(true);
+  $(".fc-learn").onclick = () => mark(false);
+  $(".fc-shuffle").onclick = shuffle;
+  $(".fc-reset").onclick = () => { if (confirm("Clear all saved progress for this deck?")) { known.clear(); save(); build(); } };
+  if ($(".fc-mode")) $(".fc-mode").onchange = () => { flipped = false; render(); };
+  if ($(".fc-group")) $(".fc-group").onchange = build;
+  if ($(".fc-groupby")) $(".fc-groupby").onchange = () => { setGrouping(); build(); };
+  $(".fc-learning").onchange = build;
+  $(".fc-search").oninput = build;
+
+  // Keyboard shortcuts act on the deck the page was last scrolled to / clicked in
+  const onKey = e => {
+    if (e.target.closest?.("input, select, textarea") || e.metaKey || e.ctrlKey || e.altKey) return;
+    const active = document.querySelector(".fc-app.fc-active") || document.querySelector(".fc-app");
+    if (active !== ui) return;
+    if (e.key === " ") { e.preventDefault(); flip(); }
+    else if (e.key === "ArrowRight") go(1);
+    else if (e.key === "ArrowLeft") go(-1);
+    else if (e.key === "k" || e.key === "K") mark(true);
+    else if (e.key === "l" || e.key === "L") mark(false);
+  };
+  ui.addEventListener("pointerdown", () => {
+    document.querySelectorAll(".fc-app.fc-active").forEach(el => el.classList.remove("fc-active"));
+    ui.classList.add("fc-active");
+  });
+  document.addEventListener("keydown", onKey);
+  invalidation?.then(() => document.removeEventListener("keydown", onKey));
+
+  setGrouping();
+  build();
+  return ui;
+}

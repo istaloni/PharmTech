@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - flashcards.js
 
 website:
   title: "Guide to the PTCB Exam"

@@ -1,138 +1,102 @@
 ---
 title: "Top 200 medications"
+description: "Flashcards for the top 200 drugs: generic and brand names, drug class, indication, schedule, and what to watch out for."
 author: "Karl Marquez"
 date: "2026-01-28"
-format: html
+date-modified: "2026-10-20"
+format:
+  html:
+    toc: false
 ---
 
-# Top 200 Medications
+Cards are grouped by **pharmacological class**, in the same order as my class slides; switch **Group by** to *Condition treated* to study by indication instead. Pick a study mode, narrow the deck to one class, and click the card (or press **Space**) to flip it. Mark each card **Got it** or **Still learning**. Your progress is saved in this browser, and **Only still learning** drills just the cards you have not mastered yet.
 
-
+<small>Keyboard: <kbd>Space</kbd> flip · <kbd>←</kbd> <kbd>→</kbd> previous / next · <kbd>K</kbd> got it · <kbd>L</kbd> still learning</small>
 
 ```{ojs}
 //| echo: false
-
-//| 1. Load data
-data = FileAttachment("top200medications.csv").csv({ typed: true })
-
-//| 2. Define reactive state
-mutable index = 0
-mutable flipped = false
-
-//| 3. The Card (Retain CSS)
-viewof card = {
-  const rotate = flipped ? "rotateY(180deg)" : "rotateY(0deg)";
-
-  const container = html`
-  <div style="perspective: 1000px; width: 450px; margin: 40px auto; cursor: pointer; height: 300px;">
-    <div style="
-      position: relative;
-      width: 100%;
-      height: 100%;
-      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-      transform-style: preserve-3d;
-      transform: ${rotate};
-      border-radius: 15px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-      border: 1px solid #e0e0e0;
-    ">
-      <div style="
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 30px;
-        background: white;
-        border-radius: 15px;
-        font-size: 1.4rem;
-        font-weight: bold;
-        text-align: center;
-      ">
-        ${data[index].Question}
-      </div>
-
-      <div style="
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        transform: rotateY(180deg);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 30px;
-        background: #f8f9fa;
-        border-radius: 15px;
-        font-size: 1.4rem;
-        text-align: center;
-      ">
-        ${data[index].Answer}
-      </div>
-    </div>
-  </div>`;
-
-  container.onclick = () => {
-    mutable flipped = !flipped
-  }
-
-  return container;
-}
-
-
-// 4. The Controls (Fixed Logic)
-viewof controls = {
-  const ui = html`
-  <div style="text-align: center;">
-    <button id="prevBtn" style="padding: 10px 20px; border-radius: 20px; border: 1px solid #ccc; cursor: pointer; background: white;">
-      ← Previous
-    </button>
-
-    <span style="margin: 0 20px; font-weight: bold; font-family: sans-serif;">
-      ${index + 1} / ${data.length}
-    </span>
-
-    <button id="nextBtn" style="padding: 10px 20px; border-radius: 20px; border: 1px solid #ccc; cursor: pointer; background: white;">
-      Next →
-    </button>
-  </div>`;
-
-  // Attach functionality manually to ensure it works every time
-  ui.querySelector("#prevBtn").onclick = () => {
-    mutable index = (index - 1 + data.length) % data.length;
-    mutable flipped = false;
-  };
-
-  ui.querySelector("#nextBtn").onclick = () => {
-    mutable index = (index + 1) % data.length;
-    mutable flipped = false;
-  };
-
-  return ui;
-  
-}
-
+fc = import(new URL("../../flashcards.js", document.baseURI).href)
+flashcards = fc.flashcards
+esc = fc.esc
+meds = FileAttachment("top200medications.csv").csv()
+legend = FileAttachment("Legend.csv").csv()
 ```
 
+```{ojs}
+//| echo: false
+flashcards({
+  cards: meds,
+  storageKey: "pharmtech-top200-known",
+  idField: "generic",
+  groupings: [
+    { label: "Drug class", field: "pharm_class", orderField: "class_order" },
+    { label: "Condition treated", field: "group", orderField: "condition_order" }
+  ],
+  searchFields: ["generic", "brand", "pharm_class", "drug_class", "indication", "notes"],
+  placeholder: "Drug, brand, class, or interaction",
+  invalidation,
+  modes: {
+    generic: {
+      label: "Generic → Brand, class, use",
+      front: d => `<div class="fc-kicker">Generic</div><div class="fc-big">${esc(d.generic)}</div>`,
+      back: d => details(d, "brand")
+    },
+    brand: {
+      label: "Brand → Generic",
+      front: d => `<div class="fc-kicker">Brand</div><div class="fc-big">${esc(d.brand)}</div>`,
+      back: d => details(d, "generic")
+    },
+    class: {
+      label: "Generic → Class & indication",
+      hideGroupOnFront: true,
+      front: d => `<div class="fc-kicker">What class is it, and what is it for?</div><div class="fc-big">${esc(d.generic)}</div>`,
+      back: d => `<div class="fc-big fc-mid">${esc(d.drug_class)}</div><div class="fc-row">${esc(d.indication)}</div>`
+    },
+    watch: {
+      label: "Generic → Watch out for (interactions, storage)",
+      front: d => `<div class="fc-kicker">What should you watch out for?</div><div class="fc-big">${esc(d.generic)}</div><div class="fc-row">${esc(d.brand)}</div>`,
+      back: d => d.notes
+        ? `<div class="fc-kicker">Watch out</div><div class="fc-row fc-answer">${esc(d.notes)}</div>`
+        : `<div class="fc-row">No special interaction or storage notes. Know the class and use: <strong>${esc(d.drug_class)}</strong>, ${esc(d.indication)}.</div>`
+    }
+  }
+})
+```
 
+```{ojs}
+//| echo: false
+statusClass = s => s.startsWith("C-") ? "fc-ctrl" : s.startsWith("OTC") ? "fc-otc" : "fc-rx"
+details = (d, lead) => `
+  <div class="fc-kicker">${lead === "brand" ? "Brand" : "Generic"}</div>
+  <div class="fc-big fc-mid">${esc(lead === "brand" ? d.brand : d.generic)}</div>
+  <dl class="fc-dl">
+    <dt>Class</dt><dd>${esc(d.drug_class)}</dd>
+    <dt>Used for</dt><dd>${esc(d.indication)}</dd>
+    <dt>Status</dt><dd><span class="fc-badge ${statusClass(d.status)}">${esc(d.status)}</span></dd>
+    ${d.notes ? `<dt>Watch out</dt><dd class="fc-note">${esc(d.notes)}</dd>` : ""}
+  </dl>`
+```
 
-## Flashcards legend / abbreviation
+For laws, sig codes, storage, and calculations, see the [PTCB review deck](../PTCB%20Review/PTCB%20Review.qmd).
 
-NCLM = Non-controlled Legend Medication  
-ACEi = Angiotensin I Converting Enzyme Inhibitor  
-ARB = Angiotensin II Receptor Blocker  
-PPI = Proton pump inhibitor  
-GERD = Gastroesophageal Reflux Disease  
-SSRI = Selective Serotonin Re-uptake inhibitor  
-SNRI = Serotonin Norepinephrine Re-uptake inhibitor  
-APAP = Acetaminophen  
-HCTZ = Hydrochlorothiazide  
-NSAID = Non-steroidal Anti-inflammatory Drug  
-ADHD = Attention Deficit Hyperactivity Disorder  
-H1RA = Histamine H1 Receptor Agonist 
+## Browse all medications
 
+```{ojs}
+//| echo: false
+viewof medSearch = Inputs.search(meds, { placeholder: "Search generic, brand, class, notes…" })
+Inputs.table(medSearch, {
+  columns: ["pharm_class", "generic", "brand", "drug_class", "indication", "status", "notes"],
+  header: { pharm_class: "Class (slides)", generic: "Generic", brand: "Brand", drug_class: "Class detail", indication: "Used for", status: "Status", notes: "Watch out" },
+  rows: 15, layout: "auto"
+})
+```
 
+## Legend and abbreviations
 
-
+```{ojs}
+//| echo: false
+Inputs.table(legend, {
+  header: { abbreviation: "Abbreviation", meaning: "Meaning" },
+  rows: legend.length + 1, layout: "auto"
+})
+```

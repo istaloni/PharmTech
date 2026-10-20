@@ -1,0 +1,59 @@
+---
+title: "PTCB review deck"
+description: "235 flashcards on interactions, storage, controlled substances, pharmacy law, sig codes, calculations, compounding, inventory, and billing."
+author: "Karl Marquez"
+date: "2026-10-20"
+format:
+  html:
+    toc: false
+---
+
+Everything beyond the drug names: the interactions, storage rules, laws, sig codes, and math that show up on the PTCE. Pick a category, flip the card (or press **Space**), and mark it **Got it** or **Still learning**. Progress is saved in this browser.
+
+<small>Keyboard: <kbd>Space</kbd> flip · <kbd>←</kbd> <kbd>→</kbd> previous / next · <kbd>K</kbd> got it · <kbd>L</kbd> still learning</small>
+
+```{ojs}
+//| echo: false
+fc = import(new URL("../../flashcards.js", document.baseURI).href)
+flashcards = fc.flashcards
+esc = fc.esc
+review = FileAttachment("ptcb_review.csv").csv()
+```
+
+```{ojs}
+//| echo: false
+flashcards({
+  cards: review,
+  storageKey: "pharmtech-review-known",
+  idField: "id",
+  groupField: "category",
+  groupLabel: "Category",
+  searchFields: ["question", "answer", "category"],
+  placeholder: "e.g. DEA 222, insulin, Clark's rule",
+  invalidation,
+  modes: {
+    qa: {
+      label: "Question → Answer",
+      front: d => `<div class="fc-big fc-mid">${esc(d.question)}</div>`,
+      back:  d => `<div class="fc-row fc-answer">${esc(d.answer)}</div>`
+    },
+    aq: {
+      label: "Answer → Question (harder)",
+      front: d => `<div class="fc-kicker">What's the question?</div><div class="fc-row fc-answer">${esc(d.answer)}</div>`,
+      back:  d => `<div class="fc-big fc-mid">${esc(d.question)}</div>`
+    }
+  }
+})
+```
+
+## Browse all cards
+
+```{ojs}
+//| echo: false
+viewof reviewSearch = Inputs.search(review, { placeholder: "Search questions and answers…" })
+Inputs.table(reviewSearch, {
+  columns: ["category", "question", "answer"],
+  header: { category: "Category", question: "Question", answer: "Answer" },
+  rows: 20, layout: "auto"
+})
+```

@@ -8,6 +8,7 @@
 
 <meta name="author" content="Karl Marquez">
 <meta name="dcterms.date" content="2026-01-28">
+<meta name="description" content="Flashcards for the top 200 drugs: generic and brand names, drug class, indication, schedule, and what to watch out for.">
 
 <title>Top 200 medications – Guide to the PTCB Exam</title>
 <style>
@@ -111,7 +112,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -147,18 +148,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#top-200-medications" id="toc-top-200-medications" class="nav-link active" data-scroll-target="#top-200-medications">Top 200 Medications</a>
-  <ul class="collapse">
-  <li><a href="#flashcards-legend-abbreviation" id="toc-flashcards-legend-abbreviation" class="nav-link" data-scroll-target="#flashcards-legend-abbreviation">Flashcards legend / abbreviation</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -167,6 +157,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1 class="title">Top 200 medications</h1>
 </div>
 
+<div>
+  <div class="description">
+    Flashcards for the top 200 drugs: generic and brand names, drug class, indication, schedule, and what to watch out for.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -185,6 +180,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
   </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">October 20, 2026</p>
+    </div>
+  </div>
     
   </div>
   
@@ -193,109 +194,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="top-200-medications" class="level1">
-<h1>Top 200 Medications</h1>
+<p>Cards are grouped by <strong>pharmacological class</strong>, in the same order as my class slides; switch <strong>Group by</strong> to <em>Condition treated</em> to study by indication instead. Pick a study mode, narrow the deck to one class, and click the card (or press <strong>Space</strong>) to flip it. Mark each card <strong>Got it</strong> or <strong>Still learning</strong>. Your progress is saved in this browser, and <strong>Only still learning</strong> drills just the cards you have not mastered yet.</p>
+<p><small>Keyboard: <kbd>Space</kbd> flip · <kbd>←</kbd> <kbd>→</kbd> previous / next · <kbd>K</kbd> got it · <kbd>L</kbd> still learning</small></p>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="16" data-source-offset="-18"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 15;"><span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"top200medications.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">//| 2. Define reactive state</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>mutable index <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>mutable flipped <span class="op">=</span> <span class="kw">false</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">//| 3. The Card (Retain CSS)</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>viewof card <span class="op">=</span> {</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> rotate <span class="op">=</span> flipped <span class="op">?</span> <span class="st">"rotateY(180deg)"</span> <span class="op">:</span> <span class="st">"rotateY(0deg)"</span><span class="op">;</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> container <span class="op">=</span> <span class="fu">html</span><span class="vs">`</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;div style="perspective: 1000px; width: 450px; margin: 40px auto; cursor: pointer; height: 300px;"&gt;</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div style="</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="vs">      position: relative;</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="vs">      width: 100%;</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="vs">      height: 100%;</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="vs">      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="vs">      transform-style: preserve-3d;</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="vs">      transform: </span><span class="sc">${</span>rotate<span class="sc">}</span><span class="vs">;</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="vs">      border-radius: 15px;</span></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="vs">      box-shadow: 0 8px 16px rgba(0,0,0,0.15);</span></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="vs">      border: 1px solid #e0e0e0;</span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="vs">    "&gt;</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div style="</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="vs">        position: absolute;</span></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="vs">        width: 100%;</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="vs">        height: 100%;</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="vs">        backface-visibility: hidden;</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="vs">        display: flex;</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="vs">        align-items: center;</span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="vs">        justify-content: center;</span></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="vs">        padding: 30px;</span></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="vs">        background: white;</span></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="vs">        border-radius: 15px;</span></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="vs">        font-size: 1.4rem;</span></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="vs">        font-weight: bold;</span></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="vs">        text-align: center;</span></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="vs">      "&gt;</span></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="vs">        </span><span class="sc">${</span>data[index]<span class="op">.</span><span class="at">Question</span><span class="sc">}</span></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/div&gt;</span></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div style="</span></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="vs">        position: absolute;</span></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="vs">        width: 100%;</span></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="vs">        height: 100%;</span></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="vs">        backface-visibility: hidden;</span></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="vs">        transform: rotateY(180deg);</span></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="vs">        display: flex;</span></span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="vs">        align-items: center;</span></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="vs">        justify-content: center;</span></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="vs">        padding: 30px;</span></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="vs">        background: #f8f9fa;</span></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="vs">        border-radius: 15px;</span></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="vs">        font-size: 1.4rem;</span></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="vs">        text-align: center;</span></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="vs">      "&gt;</span></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="vs">        </span><span class="sc">${</span>data[index]<span class="op">.</span><span class="at">Answer</span><span class="sc">}</span></span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/div&gt;</span></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;</span></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/div&gt;`</span><span class="op">;</span></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>  container<span class="op">.</span><span class="at">onclick</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>    mutable flipped <span class="op">=</span> <span class="op">!</span>flipped</span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> container<span class="op">;</span></span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="co">// 4. The Controls (Fixed Logic)</span></span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>viewof controls <span class="op">=</span> {</span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> ui <span class="op">=</span> <span class="fu">html</span><span class="vs">`</span></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;div style="text-align: center;"&gt;</span></span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;button id="prevBtn" style="padding: 10px 20px; border-radius: 20px; border: 1px solid #ccc; cursor: pointer; background: white;"&gt;</span></span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="vs">      ← Previous</span></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/button&gt;</span></span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;span style="margin: 0 20px; font-weight: bold; font-family: sans-serif;"&gt;</span></span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="vs">      </span><span class="sc">${</span>index <span class="op">+</span> <span class="dv">1</span><span class="sc">}</span><span class="vs"> / </span><span class="sc">${</span>data<span class="op">.</span><span class="at">length</span><span class="sc">}</span></span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/span&gt;</span></span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;button id="nextBtn" style="padding: 10px 20px; border-radius: 20px; border: 1px solid #ccc; cursor: pointer; background: white;"&gt;</span></span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="vs">      Next →</span></span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/button&gt;</span></span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/div&gt;`</span><span class="op">;</span></span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Attach functionality manually to ensure it works every time</span></span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>  ui<span class="op">.</span><span class="fu">querySelector</span>(<span class="st">"#prevBtn"</span>)<span class="op">.</span><span class="at">onclick</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>    mutable index <span class="op">=</span> (index <span class="op">-</span> <span class="dv">1</span> <span class="op">+</span> data<span class="op">.</span><span class="at">length</span>) <span class="op">%</span> data<span class="op">.</span><span class="at">length</span><span class="op">;</span></span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>    mutable flipped <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
-<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>  ui<span class="op">.</span><span class="fu">querySelector</span>(<span class="st">"#nextBtn"</span>)<span class="op">.</span><span class="at">onclick</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>    mutable index <span class="op">=</span> (index <span class="op">+</span> <span class="dv">1</span>) <span class="op">%</span> data<span class="op">.</span><span class="at">length</span><span class="op">;</span></span>
-<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>    mutable flipped <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></span>
-<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> ui<span class="op">;</span></span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="18" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 17;"><span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>fc <span class="op">=</span> <span class="im">import</span>(<span class="kw">new</span> <span class="fu">URL</span>(<span class="st">"../../flashcards.js"</span><span class="op">,</span> <span class="bu">document</span><span class="op">.</span><span class="at">baseURI</span>)<span class="op">.</span><span class="at">href</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>flashcards <span class="op">=</span> fc<span class="op">.</span><span class="at">flashcards</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>esc <span class="op">=</span> fc<span class="op">.</span><span class="at">esc</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>meds <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"top200medications.csv"</span>)<span class="op">.</span><span class="fu">csv</span>()</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>legend <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"Legend.csv"</span>)<span class="op">.</span><span class="fu">csv</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -332,28 +238,121 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<section id="flashcards-legend-abbreviation" class="level2">
-<h2 class="anchored" data-anchor-id="flashcards-legend-abbreviation">Flashcards legend / abbreviation</h2>
-<p>NCLM = Non-controlled Legend Medication<br>
-ACEi = Angiotensin I Converting Enzyme Inhibitor<br>
-ARB = Angiotensin II Receptor Blocker<br>
-PPI = Proton pump inhibitor<br>
-GERD = Gastroesophageal Reflux Disease<br>
-SSRI = Selective Serotonin Re-uptake inhibitor<br>
-SNRI = Serotonin Norepinephrine Re-uptake inhibitor<br>
-APAP = Acetaminophen<br>
-HCTZ = Hydrochlorothiazide<br>
-NSAID = Non-steroidal Anti-inflammatory Drug<br>
-ADHD = Attention Deficit Hyperactivity Disorder<br>
-H1RA = Histamine H1 Receptor Agonist</p>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="26" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="fu">flashcards</span>({</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="dt">cards</span><span class="op">:</span> meds<span class="op">,</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  <span class="dt">storageKey</span><span class="op">:</span> <span class="st">"pharmtech-top200-known"</span><span class="op">,</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  <span class="dt">idField</span><span class="op">:</span> <span class="st">"generic"</span><span class="op">,</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>  <span class="dt">groupings</span><span class="op">:</span> [</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">label</span><span class="op">:</span> <span class="st">"Drug class"</span><span class="op">,</span> <span class="dt">field</span><span class="op">:</span> <span class="st">"pharm_class"</span><span class="op">,</span> <span class="dt">orderField</span><span class="op">:</span> <span class="st">"class_order"</span> }<span class="op">,</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">label</span><span class="op">:</span> <span class="st">"Condition treated"</span><span class="op">,</span> <span class="dt">field</span><span class="op">:</span> <span class="st">"group"</span><span class="op">,</span> <span class="dt">orderField</span><span class="op">:</span> <span class="st">"condition_order"</span> }</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  <span class="dt">searchFields</span><span class="op">:</span> [<span class="st">"generic"</span><span class="op">,</span> <span class="st">"brand"</span><span class="op">,</span> <span class="st">"pharm_class"</span><span class="op">,</span> <span class="st">"drug_class"</span><span class="op">,</span> <span class="st">"indication"</span><span class="op">,</span> <span class="st">"notes"</span>]<span class="op">,</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Drug, brand, class, or interaction"</span><span class="op">,</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  invalidation<span class="op">,</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>  <span class="dt">modes</span><span class="op">:</span> {</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>    <span class="dt">generic</span><span class="op">:</span> {</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>      <span class="dt">label</span><span class="op">:</span> <span class="st">"Generic → Brand, class, use"</span><span class="op">,</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>      <span class="dt">front</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="vs">`&lt;div class="fc-kicker"&gt;Generic&lt;/div&gt;&lt;div class="fc-big"&gt;</span><span class="sc">${</span><span class="fu">esc</span>(d<span class="op">.</span><span class="at">generic</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;`</span><span class="op">,</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>      <span class="dt">back</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="fu">details</span>(d<span class="op">,</span> <span class="st">"brand"</span>)</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>    <span class="dt">brand</span><span class="op">:</span> {</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>      <span class="dt">label</span><span class="op">:</span> <span class="st">"Brand → Generic"</span><span class="op">,</span></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>      <span class="dt">front</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="vs">`&lt;div class="fc-kicker"&gt;Brand&lt;/div&gt;&lt;div class="fc-big"&gt;</span><span class="sc">${</span><span class="fu">esc</span>(d<span class="op">.</span><span class="at">brand</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;`</span><span class="op">,</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>      <span class="dt">back</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="fu">details</span>(d<span class="op">,</span> <span class="st">"generic"</span>)</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>    <span class="dt">class</span><span class="op">:</span> {</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>      <span class="dt">label</span><span class="op">:</span> <span class="st">"Generic → Class &amp; indication"</span><span class="op">,</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>      <span class="dt">front</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="vs">`&lt;div class="fc-kicker"&gt;What class is it, and what is it for?&lt;/div&gt;&lt;div class="fc-big"&gt;</span><span class="sc">${</span><span class="fu">esc</span>(d<span class="op">.</span><span class="at">generic</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;`</span><span class="op">,</span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>      <span class="dt">back</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="vs">`&lt;div class="fc-big fc-mid"&gt;</span><span class="sc">${</span><span class="fu">esc</span>(d<span class="op">.</span><span class="at">drug_class</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;&lt;div class="fc-row"&gt;</span><span class="sc">${</span><span class="fu">esc</span>(d<span class="op">.</span><span class="at">indication</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;`</span></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>    <span class="dt">watch</span><span class="op">:</span> {</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>      <span class="dt">label</span><span class="op">:</span> <span class="st">"Generic → Watch out for (interactions, storage)"</span><span class="op">,</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>      <span class="dt">front</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="vs">`&lt;div class="fc-kicker"&gt;What should you watch out for?&lt;/div&gt;&lt;div class="fc-big"&gt;</span><span class="sc">${</span><span class="fu">esc</span>(d<span class="op">.</span><span class="at">generic</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;&lt;div class="fc-row"&gt;</span><span class="sc">${</span><span class="fu">esc</span>(d<span class="op">.</span><span class="at">brand</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;`</span><span class="op">,</span></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>      <span class="dt">back</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">notes</span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>        <span class="op">?</span> <span class="vs">`&lt;div class="fc-kicker"&gt;Watch out&lt;/div&gt;&lt;div class="fc-row fc-answer"&gt;</span><span class="sc">${</span><span class="fu">esc</span>(d<span class="op">.</span><span class="at">notes</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;`</span></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>        <span class="op">:</span> <span class="vs">`&lt;div class="fc-row"&gt;No special interaction or storage notes. Know the class and use: &lt;strong&gt;</span><span class="sc">${</span><span class="fu">esc</span>(d<span class="op">.</span><span class="at">drug_class</span>)<span class="sc">}</span><span class="vs">&lt;/strong&gt;, </span><span class="sc">${</span><span class="fu">esc</span>(d<span class="op">.</span><span class="at">indication</span>)<span class="sc">}</span><span class="vs">.&lt;/div&gt;`</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="expression">
 
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="67" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 66;"><span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a>statusClass <span class="op">=</span> s <span class="kw">=&gt;</span> s<span class="op">.</span><span class="fu">startsWith</span>(<span class="st">"C-"</span>) <span class="op">?</span> <span class="st">"fc-ctrl"</span> <span class="op">:</span> s<span class="op">.</span><span class="fu">startsWith</span>(<span class="st">"OTC"</span>) <span class="op">?</span> <span class="st">"fc-otc"</span> <span class="op">:</span> <span class="st">"fc-rx"</span></span>
+<span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a>details <span class="op">=</span> (d<span class="op">,</span> lead) <span class="kw">=&gt;</span> <span class="vs">`</span></span>
+<span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;div class="fc-kicker"&gt;</span><span class="sc">${</span>lead <span class="op">===</span> <span class="st">"brand"</span> <span class="op">?</span> <span class="st">"Brand"</span> <span class="op">:</span> <span class="st">"Generic"</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;div class="fc-big fc-mid"&gt;</span><span class="sc">${</span><span class="fu">esc</span>(lead <span class="op">===</span> <span class="st">"brand"</span> <span class="op">?</span> d<span class="op">.</span><span class="at">brand</span> <span class="op">:</span> d<span class="op">.</span><span class="at">generic</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;dl class="fc-dl"&gt;</span></span>
+<span id="cb3-72"><a href="#cb3-72" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;dt&gt;Class&lt;/dt&gt;&lt;dd&gt;</span><span class="sc">${</span><span class="fu">esc</span>(d<span class="op">.</span><span class="at">drug_class</span>)<span class="sc">}</span><span class="vs">&lt;/dd&gt;</span></span>
+<span id="cb3-73"><a href="#cb3-73" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;dt&gt;Used for&lt;/dt&gt;&lt;dd&gt;</span><span class="sc">${</span><span class="fu">esc</span>(d<span class="op">.</span><span class="at">indication</span>)<span class="sc">}</span><span class="vs">&lt;/dd&gt;</span></span>
+<span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;dt&gt;Status&lt;/dt&gt;&lt;dd&gt;&lt;span class="fc-badge </span><span class="sc">${</span><span class="fu">statusClass</span>(d<span class="op">.</span><span class="at">status</span>)<span class="sc">}</span><span class="vs">"&gt;</span><span class="sc">${</span><span class="fu">esc</span>(d<span class="op">.</span><span class="at">status</span>)<span class="sc">}</span><span class="vs">&lt;/span&gt;&lt;/dd&gt;</span></span>
+<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a><span class="vs">    </span><span class="sc">${</span>d<span class="op">.</span><span class="at">notes</span> <span class="op">?</span> <span class="vs">`&lt;dt&gt;Watch out&lt;/dt&gt;&lt;dd class="fc-note"&gt;</span><span class="sc">${</span><span class="fu">esc</span>(d<span class="op">.</span><span class="at">notes</span>)<span class="sc">}</span><span class="vs">&lt;/dd&gt;`</span> <span class="op">:</span> <span class="st">""</span><span class="sc">}</span></span>
+<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/dl&gt;`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-1" data-nodetype="declaration">
 
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<p>For laws, sig codes, storage, and calculations, see the <a href="../../posts/PTCB Review/PTCB Review.html">PTCB review deck</a>.</p>
+<section id="browse-all-medications" class="level2">
+<h2 class="anchored" data-anchor-id="browse-all-medications">Browse all medications</h2>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="85" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 84;"><span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a>viewof medSearch <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">search</span>(meds<span class="op">,</span> { <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Search generic, brand, class, notes…"</span> })</span>
+<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(medSearch<span class="op">,</span> {</span>
+<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>  <span class="dt">columns</span><span class="op">:</span> [<span class="st">"pharm_class"</span><span class="op">,</span> <span class="st">"generic"</span><span class="op">,</span> <span class="st">"brand"</span><span class="op">,</span> <span class="st">"drug_class"</span><span class="op">,</span> <span class="st">"indication"</span><span class="op">,</span> <span class="st">"status"</span><span class="op">,</span> <span class="st">"notes"</span>]<span class="op">,</span></span>
+<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a>  <span class="dt">header</span><span class="op">:</span> { <span class="dt">pharm_class</span><span class="op">:</span> <span class="st">"Class (slides)"</span><span class="op">,</span> <span class="dt">generic</span><span class="op">:</span> <span class="st">"Generic"</span><span class="op">,</span> <span class="dt">brand</span><span class="op">:</span> <span class="st">"Brand"</span><span class="op">,</span> <span class="dt">drug_class</span><span class="op">:</span> <span class="st">"Class detail"</span><span class="op">,</span> <span class="dt">indication</span><span class="op">:</span> <span class="st">"Used for"</span><span class="op">,</span> <span class="dt">status</span><span class="op">:</span> <span class="st">"Status"</span><span class="op">,</span> <span class="dt">notes</span><span class="op">:</span> <span class="st">"Watch out"</span> }<span class="op">,</span></span>
+<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a>  <span class="dt">rows</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">layout</span><span class="op">:</span> <span class="st">"auto"</span></span>
+<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-4-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-4-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
 </section>
+<section id="legend-and-abbreviations" class="level2">
+<h2 class="anchored" data-anchor-id="legend-and-abbreviations">Legend and abbreviations</h2>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="96" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 95;"><span id="cb5-96"><a href="#cb5-96" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(legend<span class="op">,</span> {</span>
+<span id="cb5-97"><a href="#cb5-97" aria-hidden="true" tabindex="-1"></a>  <span class="dt">header</span><span class="op">:</span> { <span class="dt">abbreviation</span><span class="op">:</span> <span class="st">"Abbreviation"</span><span class="op">,</span> <span class="dt">meaning</span><span class="op">:</span> <span class="st">"Meaning"</span> }<span class="op">,</span></span>
+<span id="cb5-98"><a href="#cb5-98" aria-hidden="true" tabindex="-1"></a>  <span class="dt">rows</span><span class="op">:</span> legend<span class="op">.</span><span class="at">length</span> <span class="op">+</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">layout</span><span class="op">:</span> <span class="st">"auto"</span></span>
+<span id="cb5-99"><a href="#cb5-99" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-5" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+
+
 </section>
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy98IDEuIExvYWQgZGF0YVxuZGF0YSA9IEZpbGVBdHRhY2htZW50KFwidG9wMjAwbWVkaWNhdGlvbnMuY3N2XCIpLmNzdih7IHR5cGVkOiB0cnVlIH0pXG5cbi8vfCAyLiBEZWZpbmUgcmVhY3RpdmUgc3RhdGVcbm11dGFibGUgaW5kZXggPSAwXG5tdXRhYmxlIGZsaXBwZWQgPSBmYWxzZVxuXG4vL3wgMy4gVGhlIENhcmQgKFJldGFpbiBDU1MpXG52aWV3b2YgY2FyZCA9IHtcbiAgY29uc3Qgcm90YXRlID0gZmxpcHBlZCA/IFwicm90YXRlWSgxODBkZWcpXCIgOiBcInJvdGF0ZVkoMGRlZylcIjtcblxuICBjb25zdCBjb250YWluZXIgPSBodG1sYFxuICA8ZGl2IHN0eWxlPVwicGVyc3BlY3RpdmU6IDEwMDBweDsgd2lkdGg6IDQ1MHB4OyBtYXJnaW46IDQwcHggYXV0bzsgY3Vyc29yOiBwb2ludGVyOyBoZWlnaHQ6IDMwMHB4O1wiPlxuICAgIDxkaXYgc3R5bGU9XCJcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgaGVpZ2h0OiAxMDAlO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuOHMgY3ViaWMtYmV6aWVyKDAuNCwgMCwgMC4yLCAxKTtcbiAgICAgIHRyYW5zZm9ybS1zdHlsZTogcHJlc2VydmUtM2Q7XG4gICAgICB0cmFuc2Zvcm06ICR7cm90YXRlfTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDhweCAxNnB4IHJnYmEoMCwwLDAsMC4xNSk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCAjZTBlMGUwO1xuICAgIFwiPlxuICAgICAgPGRpdiBzdHlsZT1cIlxuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICBoZWlnaHQ6IDEwMCU7XG4gICAgICAgIGJhY2tmYWNlLXZpc2liaWxpdHk6IGhpZGRlbjtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHBhZGRpbmc6IDMwcHg7XG4gICAgICAgIGJhY2tncm91bmQ6IHdoaXRlO1xuICAgICAgICBib3JkZXItcmFkaXVzOiAxNXB4O1xuICAgICAgICBmb250LXNpemU6IDEuNHJlbTtcbiAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICAgIFwiPlxuICAgICAgICAke2RhdGFbaW5kZXhdLlF1ZXN0aW9ufVxuICAgICAgPC9kaXY+XG5cbiAgICAgIDxkaXYgc3R5bGU9XCJcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgaGVpZ2h0OiAxMDAlO1xuICAgICAgICBiYWNrZmFjZS12aXNpYmlsaXR5OiBoaWRkZW47XG4gICAgICAgIHRyYW5zZm9ybTogcm90YXRlWSgxODBkZWcpO1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgcGFkZGluZzogMzBweDtcbiAgICAgICAgYmFja2dyb3VuZDogI2Y4ZjlmYTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogMTVweDtcbiAgICAgICAgZm9udC1zaXplOiAxLjRyZW07XG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICAgIFwiPlxuICAgICAgICAke2RhdGFbaW5kZXhdLkFuc3dlcn1cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICA8L2Rpdj5gO1xuXG4gIGNvbnRhaW5lci5vbmNsaWNrID0gKCkgPT4ge1xuICAgIG11dGFibGUgZmxpcHBlZCA9ICFmbGlwcGVkXG4gIH1cblxuICByZXR1cm4gY29udGFpbmVyO1xufVxuXG5cbi8vIDQuIFRoZSBDb250cm9scyAoRml4ZWQgTG9naWMpXG52aWV3b2YgY29udHJvbHMgPSB7XG4gIGNvbnN0IHVpID0gaHRtbGBcbiAgPGRpdiBzdHlsZT1cInRleHQtYWxpZ246IGNlbnRlcjtcIj5cbiAgICA8YnV0dG9uIGlkPVwicHJldkJ0blwiIHN0eWxlPVwicGFkZGluZzogMTBweCAyMHB4OyBib3JkZXItcmFkaXVzOiAyMHB4OyBib3JkZXI6IDFweCBzb2xpZCAjY2NjOyBjdXJzb3I6IHBvaW50ZXI7IGJhY2tncm91bmQ6IHdoaXRlO1wiPlxuICAgICAg4oaQIFByZXZpb3VzXG4gICAgPC9idXR0b24+XG5cbiAgICA8c3BhbiBzdHlsZT1cIm1hcmdpbjogMCAyMHB4OyBmb250LXdlaWdodDogYm9sZDsgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XCI+XG4gICAgICAke2luZGV4ICsgMX0gLyAke2RhdGEubGVuZ3RofVxuICAgIDwvc3Bhbj5cblxuICAgIDxidXR0b24gaWQ9XCJuZXh0QnRuXCIgc3R5bGU9XCJwYWRkaW5nOiAxMHB4IDIwcHg7IGJvcmRlci1yYWRpdXM6IDIwcHg7IGJvcmRlcjogMXB4IHNvbGlkICNjY2M7IGN1cnNvcjogcG9pbnRlcjsgYmFja2dyb3VuZDogd2hpdGU7XCI+XG4gICAgICBOZXh0IOKGklxuICAgIDwvYnV0dG9uPlxuICA8L2Rpdj5gO1xuXG4gIC8vIEF0dGFjaCBmdW5jdGlvbmFsaXR5IG1hbnVhbGx5IHRvIGVuc3VyZSBpdCB3b3JrcyBldmVyeSB0aW1lXG4gIHVpLnF1ZXJ5U2VsZWN0b3IoXCIjcHJldkJ0blwiKS5vbmNsaWNrID0gKCkgPT4ge1xuICAgIG11dGFibGUgaW5kZXggPSAoaW5kZXggLSAxICsgZGF0YS5sZW5ndGgpICUgZGF0YS5sZW5ndGg7XG4gICAgbXV0YWJsZSBmbGlwcGVkID0gZmFsc2U7XG4gIH07XG5cbiAgdWkucXVlcnlTZWxlY3RvcihcIiNuZXh0QnRuXCIpLm9uY2xpY2sgPSAoKSA9PiB7XG4gICAgbXV0YWJsZSBpbmRleCA9IChpbmRleCArIDEpICUgZGF0YS5sZW5ndGg7XG4gICAgbXV0YWJsZSBmbGlwcGVkID0gZmFsc2U7XG4gIH07XG5cbiAgcmV0dXJuIHVpO1xuICBcbn1cblxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdjYXJkJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ2NvbnRyb2xzJykifV19
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImZjID0gaW1wb3J0KG5ldyBVUkwoXCIuLi8uLi9mbGFzaGNhcmRzLmpzXCIsIGRvY3VtZW50LmJhc2VVUkkpLmhyZWYpXG5mbGFzaGNhcmRzID0gZmMuZmxhc2hjYXJkc1xuZXNjID0gZmMuZXNjXG5tZWRzID0gRmlsZUF0dGFjaG1lbnQoXCJ0b3AyMDBtZWRpY2F0aW9ucy5jc3ZcIikuY3N2KClcbmxlZ2VuZCA9IEZpbGVBdHRhY2htZW50KFwiTGVnZW5kLmNzdlwiKS5jc3YoKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiZmxhc2hjYXJkcyh7XG4gIGNhcmRzOiBtZWRzLFxuICBzdG9yYWdlS2V5OiBcInBoYXJtdGVjaC10b3AyMDAta25vd25cIixcbiAgaWRGaWVsZDogXCJnZW5lcmljXCIsXG4gIGdyb3VwaW5nczogW1xuICAgIHsgbGFiZWw6IFwiRHJ1ZyBjbGFzc1wiLCBmaWVsZDogXCJwaGFybV9jbGFzc1wiLCBvcmRlckZpZWxkOiBcImNsYXNzX29yZGVyXCIgfSxcbiAgICB7IGxhYmVsOiBcIkNvbmRpdGlvbiB0cmVhdGVkXCIsIGZpZWxkOiBcImdyb3VwXCIsIG9yZGVyRmllbGQ6IFwiY29uZGl0aW9uX29yZGVyXCIgfVxuICBdLFxuICBzZWFyY2hGaWVsZHM6IFtcImdlbmVyaWNcIiwgXCJicmFuZFwiLCBcInBoYXJtX2NsYXNzXCIsIFwiZHJ1Z19jbGFzc1wiLCBcImluZGljYXRpb25cIiwgXCJub3Rlc1wiXSxcbiAgcGxhY2Vob2xkZXI6IFwiRHJ1ZywgYnJhbmQsIGNsYXNzLCBvciBpbnRlcmFjdGlvblwiLFxuICBpbnZhbGlkYXRpb24sXG4gIG1vZGVzOiB7XG4gICAgZ2VuZXJpYzoge1xuICAgICAgbGFiZWw6IFwiR2VuZXJpYyDihpIgQnJhbmQsIGNsYXNzLCB1c2VcIixcbiAgICAgIGZyb250OiBkID0+IGA8ZGl2IGNsYXNzPVwiZmMta2lja2VyXCI+R2VuZXJpYzwvZGl2PjxkaXYgY2xhc3M9XCJmYy1iaWdcIj4ke2VzYyhkLmdlbmVyaWMpfTwvZGl2PmAsXG4gICAgICBiYWNrOiBkID0+IGRldGFpbHMoZCwgXCJicmFuZFwiKVxuICAgIH0sXG4gICAgYnJhbmQ6IHtcbiAgICAgIGxhYmVsOiBcIkJyYW5kIOKGkiBHZW5lcmljXCIsXG4gICAgICBmcm9udDogZCA9PiBgPGRpdiBjbGFzcz1cImZjLWtpY2tlclwiPkJyYW5kPC9kaXY+PGRpdiBjbGFzcz1cImZjLWJpZ1wiPiR7ZXNjKGQuYnJhbmQpfTwvZGl2PmAsXG4gICAgICBiYWNrOiBkID0+IGRldGFpbHMoZCwgXCJnZW5lcmljXCIpXG4gICAgfSxcbiAgICBjbGFzczoge1xuICAgICAgbGFiZWw6IFwiR2VuZXJpYyDihpIgQ2xhc3MgJiBpbmRpY2F0aW9uXCIsXG4gICAgICBmcm9udDogZCA9PiBgPGRpdiBjbGFzcz1cImZjLWtpY2tlclwiPldoYXQgY2xhc3MgaXMgaXQsIGFuZCB3aGF0IGlzIGl0IGZvcj88L2Rpdj48ZGl2IGNsYXNzPVwiZmMtYmlnXCI+JHtlc2MoZC5nZW5lcmljKX08L2Rpdj5gLFxuICAgICAgYmFjazogZCA9PiBgPGRpdiBjbGFzcz1cImZjLWJpZyBmYy1taWRcIj4ke2VzYyhkLmRydWdfY2xhc3MpfTwvZGl2PjxkaXYgY2xhc3M9XCJmYy1yb3dcIj4ke2VzYyhkLmluZGljYXRpb24pfTwvZGl2PmBcbiAgICB9LFxuICAgIHdhdGNoOiB7XG4gICAgICBsYWJlbDogXCJHZW5lcmljIOKGkiBXYXRjaCBvdXQgZm9yIChpbnRlcmFjdGlvbnMsIHN0b3JhZ2UpXCIsXG4gICAgICBmcm9udDogZCA9PiBgPGRpdiBjbGFzcz1cImZjLWtpY2tlclwiPldoYXQgc2hvdWxkIHlvdSB3YXRjaCBvdXQgZm9yPzwvZGl2PjxkaXYgY2xhc3M9XCJmYy1iaWdcIj4ke2VzYyhkLmdlbmVyaWMpfTwvZGl2PjxkaXYgY2xhc3M9XCJmYy1yb3dcIj4ke2VzYyhkLmJyYW5kKX08L2Rpdj5gLFxuICAgICAgYmFjazogZCA9PiBkLm5vdGVzXG4gICAgICAgID8gYDxkaXYgY2xhc3M9XCJmYy1raWNrZXJcIj5XYXRjaCBvdXQ8L2Rpdj48ZGl2IGNsYXNzPVwiZmMtcm93IGZjLWFuc3dlclwiPiR7ZXNjKGQubm90ZXMpfTwvZGl2PmBcbiAgICAgICAgOiBgPGRpdiBjbGFzcz1cImZjLXJvd1wiPk5vIHNwZWNpYWwgaW50ZXJhY3Rpb24gb3Igc3RvcmFnZSBub3Rlcy4gS25vdyB0aGUgY2xhc3MgYW5kIHVzZTogPHN0cm9uZz4ke2VzYyhkLmRydWdfY2xhc3MpfTwvc3Ryb25nPiwgJHtlc2MoZC5pbmRpY2F0aW9uKX0uPC9kaXY+YFxuICAgIH1cbiAgfVxufSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InN0YXR1c0NsYXNzID0gcyA9PiBzLnN0YXJ0c1dpdGgoXCJDLVwiKSA/IFwiZmMtY3RybFwiIDogcy5zdGFydHNXaXRoKFwiT1RDXCIpID8gXCJmYy1vdGNcIiA6IFwiZmMtcnhcIlxuZGV0YWlscyA9IChkLCBsZWFkKSA9PiBgXG4gIDxkaXYgY2xhc3M9XCJmYy1raWNrZXJcIj4ke2xlYWQgPT09IFwiYnJhbmRcIiA/IFwiQnJhbmRcIiA6IFwiR2VuZXJpY1wifTwvZGl2PlxuICA8ZGl2IGNsYXNzPVwiZmMtYmlnIGZjLW1pZFwiPiR7ZXNjKGxlYWQgPT09IFwiYnJhbmRcIiA/IGQuYnJhbmQgOiBkLmdlbmVyaWMpfTwvZGl2PlxuICA8ZGwgY2xhc3M9XCJmYy1kbFwiPlxuICAgIDxkdD5DbGFzczwvZHQ+PGRkPiR7ZXNjKGQuZHJ1Z19jbGFzcyl9PC9kZD5cbiAgICA8ZHQ+VXNlZCBmb3I8L2R0PjxkZD4ke2VzYyhkLmluZGljYXRpb24pfTwvZGQ+XG4gICAgPGR0PlN0YXR1czwvZHQ+PGRkPjxzcGFuIGNsYXNzPVwiZmMtYmFkZ2UgJHtzdGF0dXNDbGFzcyhkLnN0YXR1cyl9XCI+JHtlc2MoZC5zdGF0dXMpfTwvc3Bhbj48L2RkPlxuICAgICR7ZC5ub3RlcyA/IGA8ZHQ+V2F0Y2ggb3V0PC9kdD48ZGQgY2xhc3M9XCJmYy1ub3RlXCI+JHtlc2MoZC5ub3Rlcyl9PC9kZD5gIDogXCJcIn1cbiAgPC9kbD5gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ2aWV3b2YgbWVkU2VhcmNoID0gSW5wdXRzLnNlYXJjaChtZWRzLCB7IHBsYWNlaG9sZGVyOiBcIlNlYXJjaCBnZW5lcmljLCBicmFuZCwgY2xhc3MsIG5vdGVz4oCmXCIgfSlcbklucHV0cy50YWJsZShtZWRTZWFyY2gsIHtcbiAgY29sdW1uczogW1wicGhhcm1fY2xhc3NcIiwgXCJnZW5lcmljXCIsIFwiYnJhbmRcIiwgXCJkcnVnX2NsYXNzXCIsIFwiaW5kaWNhdGlvblwiLCBcInN0YXR1c1wiLCBcIm5vdGVzXCJdLFxuICBoZWFkZXI6IHsgcGhhcm1fY2xhc3M6IFwiQ2xhc3MgKHNsaWRlcylcIiwgZ2VuZXJpYzogXCJHZW5lcmljXCIsIGJyYW5kOiBcIkJyYW5kXCIsIGRydWdfY2xhc3M6IFwiQ2xhc3MgZGV0YWlsXCIsIGluZGljYXRpb246IFwiVXNlZCBmb3JcIiwgc3RhdHVzOiBcIlN0YXR1c1wiLCBub3RlczogXCJXYXRjaCBvdXRcIiB9LFxuICByb3dzOiAxNSwgbGF5b3V0OiBcImF1dG9cIlxufSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IklucHV0cy50YWJsZShsZWdlbmQsIHtcbiAgaGVhZGVyOiB7IGFiYnJldmlhdGlvbjogXCJBYmJyZXZpYXRpb25cIiwgbWVhbmluZzogXCJNZWFuaW5nXCIgfSxcbiAgcm93czogbGVnZW5kLmxlbmd0aCArIDEsIGxheW91dDogXCJhdXRvXCJcbn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ21lZFNlYXJjaCcpIn1dfQ==
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }

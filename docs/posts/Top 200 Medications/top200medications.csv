@@ -1,254 +1,202 @@
-﻿Question,Answer
-INDICATION: HYPERTENSION,CLASS: ACE INHIBITORS
-Lisinopril,"Prinivil, ACEi, Antihypertensive, NCLM. "
-Lisinopril/HCTZ,"Zestoretic, ACEi/Thiazide Diuretic, Antihypertensives, NCLM"
-Ramipril,"Altace, ACEi, Antihypertensive, NCLM"
-Benazepril,"Lotensin, ACEi, Antihypertensive, NCLM"
-Enalapril,"Vasotec, ACEi, Antihypertensive, NCLM"
-Amlodipine/Benazepril,"Lotrel, ACEi / Calcium Channel Blocker, Antihypertensive, NCLM"
-INDICATION: HYPERTENSION,CLASS: BETA-BLOCKERS
-Metoprolol Succinate Extended Release,"Toprol XL. Beta-blocker, Antihypertensive, NCLM"
-Metoprolol tartate,"Lopressor, Beta-blocker, Antihypertensive, NCLM"
-Carvedilol ,"Coreg, Beta-blocker, Antihypertensives, NCLM"
-Atenolol,"Tenormin, Beta-blocker, Antihypertensive, NCLM"
-Propanolol,"Inderal, Beta-blocker, Antihypertensive, NCLM"
-Nebivolol,"Bystolic, Beta-Blocker, Anti-hypertensive, NCLM"
-INDICATION: HYPERTENSION,CLASS: ARB
-Losartan potassium,"Cozaar, ARB, Antihypertensive, NCLM"
-Losartan / Hydrochlorothiazide,"Hyzaar, ARB/Thiazide Diuretic, Antihypertensive, NCLM"
-Valsartan,"Diovan, ARB, Antihypertensive, NCLM"
-Valsartan/HCTZ,"Diovan HCT, ARB/Thiazide Diuretic, Antihypertensive, NCLM"
-INDICATION: HYPERTENSION,CLASS: DIURETICS
-Hydrochlorothiazide,"Microzide, Thiazide diuretic, Antihypertensive, NCLM"
-Chlorthalidone,"Hygroton, Thiazide Diuretic, Antihypertensive, NCLM"
-Furosemide,"Lasix, Loop of Henle diuretic, Antihypertensive, NCLM"
-Spironolactone,"Aldactone, Potassium-Sparing Diuretic, Antihypertensive, NCLM"
-Triamterene/HCTZ,"Dyazide/Maxzide, Potassium Sparing Diuretic/Thiazide, Antihypertensive, NCLM"
-INDICATION: HYPERTENSION,CLASS: ALPHA-2 AGONISTS
-Guanfacine,"Tenex, Alpha2-Agonist, ADHD/Antihypertensive, NCLM"
-Clonidine,"Catapres, Alpha-2 Agonist, Antihypertensive, NCLM"
-INDICATION: HYPERTENSION,CLASS: ALPHA-2 CALCIUM CHANNEL BLOCKER
-Amlodipine,"Norvasc, Calcium Channel Blocker, Antihypertensive, NCLM"
-Diltiazem,"Cardizem, Calcium Channel Blocker, Antihypertensive, NCLM"
-Verapamil,"Verelan, Calcium Channel Blocker, Antihypertensive, NCLM"
-Nifedipine,"ProCardia, Calcium Channel Blocker, Antihypertensive, NCLM"
-INDICATION: HYPERTENSION,CLASS: HMG-CoA REDUCTASE INHIBITOR
-Atorvastatin,"Lipitor, HMG-CoA Reductase Inhibitor, Cholesterol lowering, NCLM"
-Simvastatin,"Zocor, HMG-CoA Reductase Inhibitor, Cholesterol lowering, NCLM"
-Rosuvastatin,"Crestor, HMG-CoA Reductase Inhibitor, Cholesterol-lowering, NCLM"
-Lovastatin,"Mevacor, HMG-CoA Reductase Inhibitor, Cholesterol lowering, NCLM"
-INDICATION: CHOLESTEROL LOWERING,CLASS: MIXED
-Gemfibrozil,"Lopid, Fibrate Derivative, Cholesterol lowering, NCLM"
-Fenofibrate,"Tricor, Fibric Acid derivative, Cholesterol lowering, NCLM"
-Omega-3-Acid Ethyl Esters,"Lovaza, Omega-3 Fatty Acids, Cholesterol lowering, NCLM"
-Ezetimibe,"Zetia, Cholesterol Absorption Inhibitor, Cholesterol Lowering, NCLM"
-INDICATION: ARRYTHMIA,CLASS: CLASS III ANTI-ARRYTHMIC
-Amiodarone,"Cordarone, Class III Anti-Arrythmic, Arrythmias, NCLM"
-INDICATION: ANGINA / HEART FAILURE,CLASS: NITRATES / VASODILATOR
-Hydralazine,"Apresoline, Vasodilator, Angina/Heart Failure, NCLM"
-Isosorbide,"Imdur, Nitrate, Angina/Heart Failure, NCLM"
-Nitroglycerin,"Nitro-STAT, Nitrate Derivative, Angina/Heart Failure, NCLM"
-Digoxin,"Lanoxin, Cardiac Glycoside, Heart Failure, NCLM"
-INDICATION: ANTICOAGULATION / BLOOD THINNERS,CLASS: MIXED
-Clopidogrel,"Plavix, P2Y12 inhibitor/anti-platelet, Clot prevention, NCLM"
-Warfarine,"Coumadin, Vitamin K Antagonist, Anti-coagulation/Blood thinner, NCLM"
-Rivaroxaban,"Xarelto, Factor Xa Inhibitor, Anticoagulant/Blood thinner, NCLM"
-Apixaban,"Eliquis, Factor Xa inhibitor, Anticoagulation/Blood thinner, NCLM"
-INDICATION: PAIN RELIEF,CLASS: OPIOIDS
-Morphine,"MS Contin, Opioid Analgesic, Pain Relief, Schedule II"
-Oxycodone,"OxyContin, Opioid Analgesic, Pain Relief, Schedule II"
-Hydrocodone/APAP,"Vicodin/Norco/Lortab, Opioid analgesic combo, Pain reliever, Schedule II"
-Hydrocodone Bitartate,"N/A, Opioid Analgesic, Pain Relief, Schedule II"
-Tramadol ,"Ultram, Opioid Analgesic, Pain relief, Schedule IV"
-INDICATION: PAIN RELIEF,CLASS: OTHERS
-Acetaminophen,"Tylenol, Anti-pyretic/analgesic, Pain relief, OTC"
-Menthol,"Bengay / Icy hot, Pain reliever, Pain reliever, OTC"
-Methocarbamol,"Robaxin, Muscle Relaxer, Pain Relief, NCLM"
-Cyclobenzaprine,"Flexeril, Muscle relaxer, Pain relief, NCLM"
-INDICATION: MIGRAINE RELIEF,CLASS: 5HT1 Agonist
-Sumatriptan,"Imitrex, 5HT1 Agonist, Migraine treatment, NCLM"
-Acetaminophen / Butalbital,"Bupap, Pain reliever / relaxant, Migraine relief, Schedule III"
-INDICATION: PAIN / INFLAMMATION,CLASS: NSAID (NON STEROIDAL ANTI-INFLAMMATORY DRUG
-Ibuprofen,"Motrin, NSAID, Pain/Inflammation Relief, OTC and NCLM (strength)"
-Aspirin,"N/A, NSAID/Anti-platelet, Pain-relief/Clot-prevention, OTC"
-Meloxicam,"Mobic, NSAID, Pain/Inflammation Relief, NCLM"
-Diclofenac,"Voltaren, NSAID, Pain/Inflammation Relief, OTC and NCLM as tablet"
-Naproxen,"Aleve, NSAID, Pain/Inflammation Relief, OTC and NCLM (strength)"
-Celecoxib,"Celebrex, COX-2 Selective NSAID, Pain/Inflammatio Relief, NCLM"
-INDICATION: INFLAMMATORY,CLASS: CORTICOSTEROID
-Prednisolone,"OraPred, Corticosteroid, Anti-inflammatory, NCLM"
-Triamcinolone,"Kenalog, Corticosteroid, Anti-inflammatory, NCLM"
-Hydrocortisone,"Cortizone, Corticosteroid, Anti-inflammatory, NCLM"
-Methylprednisolone,"Medrol, Corticosteroid, Anti-inflammatory, NCLM"
-Prednisone,"Deltasone, Corticosteroid, Inflammation, NCLM"
-INDICATION: PAIN / SEIZURES,CLASS: ANTICONVULSANT
-Gabapentin,"Neurontin, Anticonvulsant, Neuropathic pain/seizures, NCLM (Schedule V in some states)"
-Pregabalin,"Lyrica, Anticonvulsant, Neuropathic Pain/Seizures, Schedule V"
-INDICATIION: SEIZURES / ANTICONVULSANTS,CLASS: ANTI-CONVULSANTS
-Lamotrigine,"Lamictal, Anticonvulsant, Siezure prevention, NCLM"
-Divalproex Sodium,"Depakote, Anticonvulsant, Seizures/Mood disorders, NCLM"
-Levetiracetam,"Keppra, AntiConvulsant, Seizures, NCLM"
-Topiramate,"Topamax, Anticonvulsant, Seizures/Migraines, NCLM"
-Carbamazepine,"Tegretol, Anti-Convulsant, Seizures, NCLM"
-INDICATION: ANTIDEPRESSANT,CLASS: SSRI
-Sertraline,"Zoloft, SSRI, Antidepressant, NCLM"
-Citalopram,"Celexa, SSRI, Antidepressant, NCLM"
-Fluoxetine,"Prozac, SSRI, Antidepressant, NCLM"
-Paroxetine,"Paxil, SSRI, Antidepressant, NCLM"
-Escitalopram,"Lexapro, SSRI, Antidepressant, NCLM"
-INDICATION: ANTIDEPRESSANT,CLASS: SNRI
-Venlafaxine,"Effexor, SNRI, Antidepressant, NCLM"
-Duloxetine,"Cymbalta, SNRI, Antidepressant, NCLM"
-INDICATION: ANTIDEPRESSANT,CLASS: TRI-CYCLIC ANTIDEPRESSANTS
-Amitriptyline,"Elavil, Tri-Cyclic Antidepressant, Depression/Sleep, NCLM"
-Nortriptyline,"Pamelor, Tri-Cyclic Antidepressant, Depression, NCLM"
-INDICATION: ANTIDEPRESSANT,CLASS: OTHERS
-Mirtazapine,"Remeron, Antidepressant, Depression, NCLM"
-Bupropion,"Wellbutrin, Antidepressant, Depression, NCLM"
-Trazodone,"Desyrel, Antidepressant, Depression, NCLM"
-INDICATION: MOOD DISORDERS,CLASS: ANTI-PSYCHOTIC
-Quetiapine Fumarate,"Seroquel, Antipsychotic, mood disorders, NCLM"
-Aripiprazole,"Abilify, Anti-Psychotic, Mood disorders, NCLM"
-Risperidone,"Risperdal, Anti-Psychotic, Mood Disorders, NCLM"
-Lithium,"Lithbod, Anti-Psychotic, Mood Disorders, NCLM"
-INDICATION: ANXIETY / SEDATIVE,CLASS: BENZODIAZEPINE
-Clonazepam,"Klonopin, Benzodiazepine, Anxiety/Sedative, Schedule IV"
-Lorazepam,"Ativan, Benzodiazepine, Anxiety/Sedative, Schedule IV"
-Diazepam,"Valium, Benzodiazepine, Sedative/Anti-Anxiety, CIV"
-Alprazolam,"Xanax, Benzodiazepine, Anxiety, Schedule IV"
-Temazepam,"Restoril, Benzodiazepine, Sedative/Anti anxiety, Schedule IV"
-INDICATION: ANXIETY / SEDATIVE,CLASS: OTHERS
-Buspirone,"Buspar, Anti-anxiety, Anxiety, NCLM"
-Zolpidem Tartate,"Ambien, Sedative, Sleep, Schedule IV"
-INDICATION: ADHD,CLASS: STIMULANTS
-Mixed Amphetamine Salts,"Adderall, Stimulant, ADHD, Schedule II"
-Methylphenidate,"Ritalin/Concerta, Stimulant, ADHD, Schedule II"
-Lisdexamfetamine,"Vyvanse, Stimulant, ADHD, Schedule II"
-Dexmethylphenidate,"Focalin, Stimulant, ADHD, Schedule II"
-INDICATION: ALLERGIES,CLASS: ANTI-HISTAMINE
-Loratadine,"Claritin, H1RA / Anti-histamine, Allergies, OTC"
-Cetirizine,"Zyrtec, H1RA / Anti-histamine, Allergies, OTC"
-Hydroxyzine,"Atarax/Vistaril, H1RA / Anti-histamine, Allergies, NCLM"
-Promethazine,"Phenergan, H1RA / Anti-histamine, Nausea / Vomiting / Allergies, NCLM"
-Meclizine Dramamine,"Antivert, H1RA / Anti-histamine, Allergies/Motion Sickness, OTC"
-Levocetirizine,"Xyzal, H1RA, Anti-histamine, Allergies, OTC"
-INDICATION: ALLERGIES,CLASS: OTHERS
-Ondansetron,"Zofran, 5HT3 Antagonist, Nausea/Vomiting, NCLM"
-Fluticasone,"Flonase, Nasal steroid, Allergic rhinitis, OTC and NCLM as generic"
-Mometasome,"Nasonex, Corticosteroid, Allergies / Anti-inflammatory, OTC"
-INDICATION: COUGH,CLASS: ANTITUSSIVE
-Benzonatate,"Tessalon Perles, Antitussive, Cough, NCLM"
-INDICATION: BACTERIAL INFECTIONS,CLASS: MIXED
-Amoxicillin,"Amoxil, Penicillin antibiotic, Bacterial infection, NCLM"
-Amoxicillin/Clavulanate Potassium,"Augmentin, Penicillin Antibiotic, Bacterial Infection, NCLM"
-Azithromycin,"Zithromax, Macrolide Antibiotic, Bacterial infection, NCLM"
-Cefdinir,"Omnicef, Cephalosporin Antibiotics, Bacterial Infections, NCLM"
-Cephalexin,"Keflex, Cesphalosporin antibiotic, Bacterial Infection, NCLM"
-Nitrofurantoin,"Macrobid, Antibiotic, Bacterial Urinary Tract Infection Treatment, NCLM"
-Metronidazole,"Flagyl, Antibiotic, Bacterial infection, NCLM"
-Bacitracine/Neomycin / Polymyxin B,"Neosporin, Triple Antibiotic, Bacterial infection, OTC"
-Levofloxacin,"Levaquin, Fluoroquinolone Antibiotic, Bacterial Infection, NCLM"
-Ciprofloxacin,"Cipro, Fluoroquinolone antibiotic, Bacterial infection, NCLM"
-Clindamycin,"Cleocin, Lincomycin Antibiotic, Bacterial Infection, NCLM"
-Doxycycline,"Doryx, Tetracycline Antibiotic, Bacterial Infections, NCLM"
-Sulfamethoxazole/TMP,"Bactrim, Sulfonamide Antibiotic, Bacterial Infection, NCLM"
-Mupirocin,"Bactroban, Topical antibiotic, Bacterial infection, NCLM"
-INDICATION: VIRAL INFECTIONS,CLASS: ANTI-VIRAL
-Valacyclovir,"Valtrex, Anti-viral, Viral infections, NCLM"
-Acyclovir,"Zovirax, Anti-viral, Viral infection, NCLM"
-Oseltamivir,"Tamiflu, Anti-viral, Influenza treatment, NCLM"
-Nirmatrelvir/ritonavir,"Paxlovid, Anti-viral, COVID, NCLM"
-INDICATION: FUNGAL INFECTIONS,CLASS: ANTI-FUNGAL
-Fluconazole,"Diflucan, Anti-fungal, Fungal infections, NCLM"
-INDICATION: ACID REFLUX / GERD,CLASS: PPI (PROTON PUMP INHIBITOR) and H2RA
-Omeprazole,"Prilosec, PPI, Acid-Reflux/GERD, OTC and NCLM (strength)"
-Pantoprazole Sodium,"Protonix, PPI, Acid reflud/GERD, NCLM"
-Esomeprazole,"Nexium, PPI, Acid Reflux/GERD, OTC and NCLM (strength)"
-Lansoprazole,"Prevacid, PPI, Acid Reflux/GERD, OTC and NCLM (strength)"
-Famotidine,"Pepcid, H2RA, Acid Reflux/GERD, OTC"
-INDICATION: DIABETES,CLASS: MIXED
-Metformin,"Glucophage, Biguanide, Diabetes medication, NCLM."
-Metformin/Sitagliptin,"Janumet, Biguanide/DPA-4 inhibitor, Diabetes agent, NCLM"
-Semaglutide,"Ozempic, GLP-1 agonists, Type2 Diabetes (off-label Weight loss), NCLM"
-Liraglutide,"Victoza, GLP-1 Agonist, Diabetes Agent, NCLM"
-Insulin Regular,"Humulin R/Novolin R, Short acting insulin, Diabetes agent, NCLM"
-Insulin Lispro,"Humalog, Short-acting insulin, Diabetes agents, NCLM"
-Insulin Aspart,"Novolog, Rapid Acting Insulin, Diabetes Agent, NCLM"
-Insulin Glargine,"Lantus, Long-acting insulin, Diabetes agent, NCLM"
-Insulin Detemir,"Levemir, Long-acting insulin, Diabetes agent, NCLM"
-Glipizide,"Glucotrol, Sulfonlyurea, Diabetes agent, NCLM"
-Glimepiride,"Amaryl, Sulfonylurea, Diabetes agent, NCLM"
-Glyburide,"Diabeta, Sulfonylurea, Diabetes Agent, NCLM"
-Sitagliptin,"Januvia, DPP-4 Inhibitor, Diabetes Agent, NCLM"
-Linagliptin,"Tradjenta, DPP-4 Inhibitor, Diabetes Agents, NCLM"
-Canagliflozin,"Invokana, SGLT-2 inhibitor, Diabetes agent, NCLM"
-Pioglitazone,"Actos, Thiazolidinedione, Diabetes agent, NCLM"
-INDICATION: HYPOTHYROIDISM,CLASS: THYROID HORMONE
-Levothyroxine,"Synthroid/Levoxyl, Thyroid hormone, Hypothyroidism, NCLM"
-Thyroid Extract,"Armour Thyroid, Thyroid hormone, Hypothyroidism, NCLM"
-INDICATION: PREGNANCY PREVENTION,CLASS: ORAL CONTRACEPTIVE
-Ethinyl Estradiol / Norethindrone,"Gildess/Junel/Loestrin / Microgestin, Oral contraceptive, Pregnancy prevention/Hormone regulation, NCLM"
-Ethinyl Estradiol / Norgestimate,"Ortho Tri-Cylen, Oral contraceptive, Pregnancy prevention/hormone regulation, NCLM"
-Ethinyl Estradiol / Drosperinone,"Yaz/Yazmin/Gianvi / Nikki, Oral contraceptive, Pregnancy prevention/hormone regulation, NCLM"
-Ethinyl Estradiol / Levonorgestrel,"Amethia/Amethyst, Oral contraceptive, Pregnancy prevention/hormone regulation, NCLM"
-Ethinyl Estradiol / Desogestrel,"April/Azurette, Oral contraceptive, Pregnancy prevention/hormone regulation, NCLM"
-Norethindrone,"Camila/Heather, Oral contraceptive, Pregnancy prevention/hormone regulation, NCLM"
-Norgestrel,"Opill, Oral Contraceptive, Pregnancy prevention, OTC"
-INDICATION: PREGNANCY PREVENTION,CLASS: VAGINAL CONTRACEPTIVE
-Ethinyl Estradiol / Etonogestrel,"Nuvaring, Vaginal Contraceptive, Pregnancy Prevention, NCLM"
-INDICATION: HORMONE SUPPLEMENT,CLASS: HORMONES
-Estradiol,"Estrace, Female Hormone, Hormone Supplement, NCLM"
-Progesterone,"Prometrium, Female Hormone Therapy, Female Hormone Therapy, NCLM"
-Testosterone,"AndroGel, Male Hormone Therapy, Hormone Therapy, Schedule III"
-INDICATION: SUPPLEMENTS,CLASS: MIXED
-Ergocalciferol,"Deltalin, Vitamin D supplement, Vitamin D Supplement, NCLM"
-Folic acid,"Folate, Vitamin Supplement, Vitamin Supplement, NCLM"
-Cyanocobalamin,"Nascobal, Vitamin B12 Supplement, Vitamin B12 Supplement, NCLM"
-Ferrous Sulfate,"Feosol, Iron supplement, Iron supplement, NCLM"
-Magnesium,"Uro-Mag, Magnesium Supplementation, Magnesium Supplementation, NCLM"
-Potassium,"Klor-Con, electrolyte, electrolyte, NCLM"
-INDICATION: MUSCLE RELAXANT,CLASS: MUSCLE RELAXANT
-Baclofen,"Lioresal, Muscle Relaxant, Muscle Relaxant, NCLM"
-Tizanidine,"Zanaflex, Muscle Relaxant, Muscle Relaxant, NCLM"
-INDICATION: GLAUCOMA,CLASS: MIXED
-Timolol,"Timoptic, Beta-blocker, Glaucoma, NCLM"
-Latanoprost,"Xalatan, Prostaglandin Analog, Glaucoma Treatment, NCLM"
-Brimonidine Tartrate,"Alphagan, Alpha agonist, Glaucoma, NCLM"
-INDICATION: GOUT,CLASS:
-Allopurinol,"Zyloprim, Xanthine Oxidase Inhibitor, Gout treatment, NCLM"
-INDICATION: RHEUMATOID ARTHRITIS,CLASS: MIXED
-Methotrexate,"Rheumatrex, Anti-Metabolite, Rheumatoid arthritis, Psoriasis, NCLM"
-Hydroxychloroquine,"Plaquenil, Anti-malarial, Anti-malarial/Rheumatoid arthritis / Lupus, NCLM"
-INDICATION: ENLARGED PROSTATE,CLASS: MIXED
-Tamsulosin,"Flomax, Alpha-blocker, Enlarged prostate, NCLM"
-Doxazosin,"Cardura, Alpha-1 Blocker, Enlarged Prostate/Anti hypertensive, NCLM"
-Terazosin,"Hytrin, Alpha-Blocker, Hypertension/Enlarged Prostate, NCLM"
-Finasteride,"Proscar, 5-Alpha Reductase Inhibitor, Enlarged Prostate, NCLM"
-INDICATION: OSTEOPOROSIS,CLASS:
-Alendronate,"Fosamax, Bisphosphonate, Osteoporosis, NCLM"
-INDICATION: OVERREACTIVE BLADDER,CLASS: MIXED
-Oxybutynin,"Ditropan, anti-cholinergic, Overactive bladder, NCLM"
-Mirabegron,"Myrbetriq, Beta-3 Agonsit, Overactive bladder, NCLM"
-INDICATION: CROHN'S / ULECRATIVE COLITIS,CLASS:
-Adalimumab,"Humira, TNF-alpha blocker, Chron's/Ulcerative Colitis, NCLM"
-INDICATION: BOWEL DISORDERS,CLASS: MIXED
-Dicyclomine,"Bentyl, AntiCholinergics, Irritable Bowel Syndrome, NCLM"
-Docusate,"Colase, Stool softener, stool softener, OTC"
-Polyethylene Glycol 3350,"Miralax, Laxative, Constipation, OTC"
-INDICATION: PARKINSON'S DISEASE,CLASS: DOPAMINE AGONIST
-Ropinirole,"Requip, Dopamine Agonist, Parkinson's treatment, NCLM"
-Pramipexole,"Mirapex, Dopamine Agonist, Parkinson's, NCLM"
-Carbidopa / Levodopa,"Sinemet, Dopamine Agonist, Parkinson's, NCLM"
-INDICATION: ALZHEIMER'S DISEASE,CLASS: MIXED
-Memantine,"Namenda, NMDA Receptor Antagonist, Alzheimer's, NCLM"
-Donepezil,"Aricept, Cholinesterase inhibitor, Alzheimer's, NCLM"
-INDICATION: ASTHMA,CLASS: MIXED
-Budesonide / Formoterol,"Symbicort, Inhaled corticosteroid/Long acting Beta agonist, Asthma treatment, NCLM"
-Flucticasone/Salmeterol,"Advair Diskus, Inhaled Corticosteroid/Long acting beta agonist, Asthma treatment, NCLM"
-Budesonide,"Pulmicort, Inhaled corticosteroid, asthma treatment, NCLM"
-Albuterol,"ProAir HFA / Ventolin HFA, Beta agonist, Bronchodilator/asthma, NCLM"
-Montelukast,"Singulair, Leukotriene modulator, Asthma treatment, NCLM"
-Tiotropium,"Spiriva, Anti-cholinergics, Bronchodilator/Asthma Treatment, NCLM"
-Albuterol / Ipratropium,"Combivent, Inhaled Beta-2 Agonist / AntiCholinergics, Asthma Treatment, NCLM"
-Dupilumab,"Dupixent, Interleukin inhibitor, Eczema / Asthma / COPD, NCLM"
-,
+pharm_class,group,subgroup,generic,brand,drug_class,indication,status,notes,class_order,condition_order
+ACE Inhibitors,Hypertension,ACE Inhibitors,Lisinopril,Zestril / Prinivil,ACE inhibitor,Hypertension / Heart failure,Rx,"Avoid in pregnancy (fetal toxicity). Side effects: dizziness / low blood pressure, dry cough.",001.00,001.000
+ACE Inhibitors,Hypertension,ACE Inhibitors,Lisinopril / HCTZ,Zestoretic,ACE inhibitor / Thiazide diuretic,Hypertension,Rx,"Avoid in pregnancy (fetal toxicity). Side effects: dizziness / low blood pressure, dry cough.",001.01,001.001
+ACE Inhibitors,Hypertension,ACE Inhibitors,Ramipril,Altace,ACE inhibitor,Hypertension,Rx,"Avoid in pregnancy (fetal toxicity). Side effects: dizziness / low blood pressure, dry cough.",001.02,001.002
+ACE Inhibitors,Hypertension,ACE Inhibitors,Benazepril,Lotensin,ACE inhibitor,Hypertension,Rx,"Avoid in pregnancy (fetal toxicity). Side effects: dizziness / low blood pressure, dry cough.",001.03,001.003
+ACE Inhibitors,Hypertension,ACE Inhibitors,Amlodipine / Benazepril,Lotrel,Calcium channel blocker / ACE inhibitor,Hypertension,Rx,"Avoid in pregnancy (fetal toxicity). Side effects: dizziness / low blood pressure, dry cough.",001.04,001.005
+ACE Inhibitors,Hypertension,ACE Inhibitors,Enalapril,Vasotec,ACE inhibitor,Hypertension,Rx,"Avoid in pregnancy (fetal toxicity). Side effects: dizziness / low blood pressure, dry cough.",001.05,001.004
+ARBs,Hypertension,ARBs,Losartan,Cozaar,ARB,Hypertension,Rx,ARBs: avoid in pregnancy.,002.00,001.012
+ARBs,Hypertension,ARBs,Losartan / HCTZ,Hyzaar,ARB / Thiazide diuretic,Hypertension,Rx,ARBs: avoid in pregnancy.,002.01,001.013
+ARBs,Hypertension,ARBs,Valsartan,Diovan,ARB,Hypertension / Heart failure,Rx,ARBs: avoid in pregnancy.,002.02,001.014
+ARBs,Hypertension,ARBs,Valsartan / HCTZ,Diovan HCT,ARB / Thiazide diuretic,Hypertension,Rx,ARBs: avoid in pregnancy.,002.03,001.015
+Alpha-2 Agonists,Hypertension,Alpha-2 Agonists,Clonidine,Catapres,Central alpha-2 agonist,Hypertension,Rx,,003.00,001.021
+Alpha-2 Agonists,Hypertension,Alpha-2 Agonists,Guanfacine,Tenex / Intuniv (ER),Central alpha-2 agonist,Hypertension (Tenex) / ADHD (Intuniv),Rx,,003.01,001.022
+Alpha-2 Agonists,Eye,Glaucoma,Brimonidine,Alphagan P,Alpha-2 agonist,Glaucoma,Rx,,003.02,019.185
+Beta-2 Agonists,Allergies / Respiratory,Asthma / COPD,Albuterol,ProAir HFA / Ventolin HFA,Short-acting beta-2 agonist (SABA),Asthma / COPD (rescue),Rx,,004.00,012.109
+Alpha Blockers,Urology,Enlarged Prostate,Doxazosin,Cardura,Alpha-1 blocker,BPH / Hypertension,Rx,,005.00,021.191
+Alpha Blockers,Urology,Enlarged Prostate,Terazosin,Hytrin,Alpha-1 blocker,BPH / Hypertension,Rx,,005.01,021.192
+Alpha Blockers,Urology,Enlarged Prostate,Tamsulosin,Flomax,Alpha-1 blocker,Enlarged prostate (BPH),Rx,,005.02,021.190
+5-Alpha Reductase Inhibitors,Urology,Enlarged Prostate,Finasteride,Proscar,5-alpha reductase inhibitor,BPH,Rx,,005.90,021.193
+Beta Blockers,Hypertension,Beta-Blockers,Metoprolol tartrate,Lopressor,Beta-blocker (beta-1 selective),Hypertension / Angina,Rx,Immediate release: usually taken twice daily.,006.00,001.007
+Beta Blockers,Hypertension,Beta-Blockers,Metoprolol succinate ER,Toprol XL,Beta-blocker (beta-1 selective),Hypertension / Heart failure,Rx,"Extended release: once daily, usually 50-200 mg. Do not crush. Insurance quantity limit example: 30 tablets / 30 days.",006.01,001.006
+Beta Blockers,Hypertension,Beta-Blockers,Carvedilol,Coreg,Beta-blocker (non-selective + alpha-1),Hypertension / Heart failure,Rx,,006.02,001.008
+Beta Blockers,Hypertension,Beta-Blockers,Atenolol,Tenormin,Beta-blocker (beta-1 selective),Hypertension,Rx,,006.03,001.009
+Beta Blockers,Hypertension,Beta-Blockers,Propranolol,Inderal,Beta-blocker (non-selective),Hypertension / Migraine prevention / Tremor,Rx,,006.04,001.010
+Beta Blockers,Hypertension,Beta-Blockers,Nebivolol,Bystolic,Beta-blocker (beta-1 selective),Hypertension,Rx,,006.05,001.011
+Beta Blockers,Eye,Glaucoma,Timolol (ophthalmic),Timoptic,Beta-blocker,Glaucoma,Rx,,006.06,019.184
+Calcium Channel Blockers,Hypertension,Calcium Channel Blockers,Amlodipine,Norvasc,Calcium channel blocker (dihydropyridine),Hypertension / Angina,Rx,Dihydropyridine CCB: relaxes arteries (lowers BP) without slowing the heart.,007.00,001.023
+Calcium Channel Blockers,Hypertension,Calcium Channel Blockers,Nifedipine,Procardia,Calcium channel blocker (dihydropyridine),Hypertension / Angina,Rx,Dihydropyridine CCB. Look-alike/sound-alike: niCARdipine.,007.01,001.024
+Calcium Channel Blockers,Hypertension,Calcium Channel Blockers,Diltiazem,Cardizem,Calcium channel blocker (non-dihydropyridine),Hypertension / Angina / Arrhythmia,Rx,Non-dihydropyridine CCB: also slows the heart rate.,007.02,001.025
+Calcium Channel Blockers,Hypertension,Calcium Channel Blockers,Verapamil,Calan / Verelan,Calcium channel blocker (non-dihydropyridine),Hypertension / Angina / Arrhythmia,Rx,Non-dihydropyridine CCB: also slows the heart rate.,007.03,001.026
+Cardiac Glycosides,Heart Failure / Angina / Arrhythmia,Antiarrhythmics,Digoxin,Lanoxin,Cardiac glycoside,Heart failure / Atrial fibrillation,Rx,"Forms: tablets 62.5 / 125 / 250 mcg, oral solution 0.05 mg/mL, injection. No sublingual form.",008.00,003.036
+Factor Xa Inhibitors,Anticoagulants / Antiplatelets,Anticoagulants,Rivaroxaban,Xarelto,Factor Xa inhibitor,Clot prevention / treatment,Rx,"Do not combine with NSAIDs (aspirin, ibuprofen, naproxen): bleeding risk. Acetaminophen is OK. No INR checks or vitamin K diet limits.",009.00,004.041
+Factor Xa Inhibitors,Anticoagulants / Antiplatelets,Anticoagulants,Apixaban,Eliquis,Factor Xa inhibitor,Clot prevention / treatment,Rx,"Do not combine with NSAIDs (aspirin, ibuprofen, naproxen): bleeding risk. Acetaminophen is OK. No INR checks or vitamin K diet limits.",009.01,004.042
+Vitamin K Antagonists,Anticoagulants / Antiplatelets,Anticoagulants,Warfarin,Coumadin / Jantoven,Vitamin K antagonist,Clot prevention / treatment,Rx,"ISMP high-alert. Main risk: bleeding; monitor INR. Vitamin K-rich greens (kale, broccoli) reduce its effect. Overdose antidote: phytonadione (vitamin K).",010.00,004.040
+Antiplatelets,Anticoagulants / Antiplatelets,Antiplatelets,Clopidogrel,Plavix,P2Y12 inhibitor (antiplatelet),Prevent heart attack / stroke,Rx,Omeprazole and esomeprazole reduce its effect (pantoprazole preferred if a PPI is needed).,011.00,004.043
+HMG-CoA Reductase Inhibitors (Statins),Hyperlipidemia,Statins,Atorvastatin,Lipitor,HMG-CoA reductase inhibitor (statin),High cholesterol,Rx,Avoid large amounts of grapefruit juice (raises statin levels). Common side effect: muscle pain (myalgia).,012.00,002.027
+HMG-CoA Reductase Inhibitors (Statins),Hyperlipidemia,Statins,Simvastatin,Zocor,HMG-CoA reductase inhibitor (statin),High cholesterol,Rx,Avoid large amounts of grapefruit juice (raises statin levels). Common side effect: muscle pain (myalgia). Ezetimibe + simvastatin = Vytorin.,012.01,002.028
+HMG-CoA Reductase Inhibitors (Statins),Hyperlipidemia,Statins,Rosuvastatin,Crestor,HMG-CoA reductase inhibitor (statin),High cholesterol,Rx,Avoid large amounts of grapefruit juice (raises statin levels). Common side effect: muscle pain (myalgia).,012.02,002.029
+HMG-CoA Reductase Inhibitors (Statins),Hyperlipidemia,Statins,Lovastatin,Mevacor,HMG-CoA reductase inhibitor (statin),High cholesterol,Rx,Avoid large amounts of grapefruit juice (raises statin levels). Common side effect: muscle pain (myalgia).,012.03,002.030
+Fibrates & Other Lipid Agents,Hyperlipidemia,Other Lipid Agents,Gemfibrozil,Lopid,Fibrate,High triglycerides,Rx,,013.00,002.031
+Fibrates & Other Lipid Agents,Hyperlipidemia,Other Lipid Agents,Fenofibrate,Tricor,Fibrate,High triglycerides / High cholesterol,Rx,,013.01,002.032
+Fibrates & Other Lipid Agents,Hyperlipidemia,Other Lipid Agents,Omega-3-acid ethyl esters,Lovaza,Omega-3 fatty acid,High triglycerides,Rx,,013.02,002.033
+Fibrates & Other Lipid Agents,Hyperlipidemia,Other Lipid Agents,Ezetimibe,Zetia,Cholesterol absorption inhibitor,High cholesterol,Rx,Ezetimibe + simvastatin = Vytorin.,013.03,002.034
+Nitrate Vasodilators,Heart Failure / Angina / Arrhythmia,Nitrates / Vasodilators,Nitroglycerin,Nitrostat,Nitrate,Acute angina,Rx,"Keep in original glass bottle with cap tight, at room temp away from heat, moisture, and light. Exempt from child-resistant caps (PPPA) for quick access.",014.00,003.039
+Nitrate Vasodilators,Heart Failure / Angina / Arrhythmia,Nitrates / Vasodilators,Isosorbide mononitrate,Imdur,Nitrate,Angina prevention,Rx,,014.01,003.038
+Nitrate Vasodilators,Heart Failure / Angina / Arrhythmia,Nitrates / Vasodilators,Hydralazine,Apresoline,Direct vasodilator,Hypertension / Heart failure,Rx,Look-alike/sound-alike: hydrOXYzine.,014.02,003.037
+Antiarrhythmics,Heart Failure / Angina / Arrhythmia,Antiarrhythmics,Amiodarone,Pacerone / Cordarone,Class III antiarrhythmic,Arrhythmia,Rx,,015.00,003.035
+Thiazide Diuretics,Hypertension,Diuretics,Hydrochlorothiazide,Microzide,Thiazide diuretic,Hypertension / Edema,Rx,,016.00,001.016
+Thiazide Diuretics,Hypertension,Diuretics,Chlorthalidone,Hygroton,Thiazide-like diuretic,Hypertension / Edema,Rx,,016.01,001.017
+Potassium-Sparing Diuretics,Hypertension,Diuretics,Spironolactone,Aldactone,Potassium-sparing diuretic (aldosterone antagonist),Heart failure / Hypertension / Edema,Rx,"Potassium-sparing: watch for high potassium, especially with potassium supplements or ACE inhibitors.",017.00,001.019
+Potassium-Sparing Diuretics,Hypertension,Diuretics,Triamterene / HCTZ,Dyazide / Maxzide,Potassium-sparing diuretic / Thiazide diuretic,Hypertension / Edema,Rx,Potassium-sparing: watch for high potassium.,017.01,001.020
+Loop Diuretics,Hypertension,Diuretics,Furosemide,Lasix,Loop diuretic,Edema / Heart failure / Hypertension,Rx,,018.00,001.018
+NDRIs,Depression,Other Antidepressants,Bupropion,Wellbutrin,NDRI antidepressant,Depression / Smoking cessation (Zyban),Rx,Look-alike/sound-alike: busPIRone. Also sold as Zyban for smoking cessation.,019.00,008.084
+SSRIs,Depression,SSRIs,Sertraline,Zoloft,SSRI,Depression / Anxiety,Rx,Boxed warning: suicidal thoughts in young people. Two SSRIs together = therapeutic duplication; SSRI + SNRI = serotonin syndrome risk.,020.00,008.075
+SSRIs,Depression,SSRIs,Citalopram,Celexa,SSRI,Depression,Rx,Boxed warning: suicidal thoughts in young people. Two SSRIs together = therapeutic duplication; SSRI + SNRI = serotonin syndrome risk. Citalopram + sertraline = therapeutic duplication.,020.01,008.076
+SSRIs,Depression,SSRIs,Escitalopram,Lexapro,SSRI,Depression / Anxiety,Rx,Boxed warning: suicidal thoughts in young people. Two SSRIs together = therapeutic duplication; SSRI + SNRI = serotonin syndrome risk. Escitalopram + duloxetine = serotonin syndrome risk.,020.02,008.077
+SSRIs,Depression,SSRIs,Fluoxetine,Prozac,SSRI,Depression / OCD,Rx,Boxed warning: suicidal thoughts in young people. Two SSRIs together = therapeutic duplication; SSRI + SNRI = serotonin syndrome risk.,020.03,008.078
+SSRIs,Depression,SSRIs,Paroxetine,Paxil,SSRI,Depression / Anxiety,Rx,Boxed warning: suicidal thoughts in young people. Two SSRIs together = therapeutic duplication; SSRI + SNRI = serotonin syndrome risk.,020.04,008.079
+SNRIs,Depression,SNRIs,Duloxetine,Cymbalta,SNRI,Depression / Anxiety / Nerve pain,Rx,Boxed warning: suicidal thoughts in young people. SNRI + SSRI = serotonin syndrome risk.,021.00,008.081
+SNRIs,Depression,SNRIs,Venlafaxine,Effexor XR,SNRI,Depression / Anxiety,Rx,Boxed warning: suicidal thoughts in young people. SNRI + SSRI = serotonin syndrome risk.,021.01,008.080
+Sedatives / Hypnotics,Anxiety / Sleep,Other Anxiolytics / Hypnotics,Zolpidem,Ambien,Sedative-hypnotic (non-benzodiazepine),Insomnia,C-IV,,022.00,010.097
+TCAs (Tricyclic Antidepressants),Depression,Tricyclic Antidepressants,Amitriptyline,Elavil,Tricyclic antidepressant,Depression / Nerve pain / Sleep,Rx,,023.00,008.082
+TCAs (Tricyclic Antidepressants),Depression,Tricyclic Antidepressants,Nortriptyline,Pamelor,Tricyclic antidepressant,Depression / Nerve pain,Rx,,023.01,008.083
+TeCAs (Tetracyclic Antidepressants),Depression,Other Antidepressants,Mirtazapine,Remeron,Tetracyclic antidepressant,Depression,Rx,,024.00,008.085
+SARIs (Serotonin Antagonist & Reuptake Inhibitors),Depression,Other Antidepressants,Trazodone,Desyrel,SARI antidepressant,Depression / Insomnia (off-label),Rx,,024.90,008.086
+Benzodiazepines,Anxiety / Sleep,Benzodiazepines,Clonazepam,Klonopin,Benzodiazepine,Panic disorder / Seizures,C-IV,C-IV: up to 5 refills within 6 months. Enhances GABA (calming).,025.00,010.092
+Benzodiazepines,Anxiety / Sleep,Benzodiazepines,Lorazepam,Ativan,Benzodiazepine,Anxiety,C-IV,C-IV: up to 5 refills within 6 months. Enhances GABA (calming).,025.01,010.093
+Benzodiazepines,Anxiety / Sleep,Benzodiazepines,Alprazolam,Xanax,Benzodiazepine,Anxiety / Panic disorder,C-IV,"C-IV: up to 5 refills within 6 months. Enhances GABA (calming). IR tablets: 0.25, 0.5, 1, 2 mg.",025.02,010.091
+Benzodiazepines,Anxiety / Sleep,Benzodiazepines,Diazepam,Valium,Benzodiazepine,Anxiety / Muscle spasm / Alcohol withdrawal,C-IV,C-IV: up to 5 refills within 6 months. Enhances GABA (calming).,025.03,010.094
+Benzodiazepines,Anxiety / Sleep,Benzodiazepines,Temazepam,Restoril,Benzodiazepine,Insomnia,C-IV,C-IV: up to 5 refills within 6 months. Enhances GABA (calming).,025.04,010.095
+Anxiolytics (non-benzodiazepine),Anxiety / Sleep,Other Anxiolytics / Hypnotics,Buspirone,Buspar,Anxiolytic (non-benzodiazepine),Anxiety,Rx,Look-alike/sound-alike: buPROPion.,025.90,010.096
+Anticonvulsants,Seizures / Nerve Pain,Anticonvulsants,Gabapentin,Neurontin,Anticonvulsant,Nerve pain / Seizures,Rx (C-V in some states),Oral solution: store in refrigerator.,026.00,007.068
+Anticonvulsants,Seizures / Nerve Pain,Anticonvulsants,Pregabalin,Lyrica,Anticonvulsant,Nerve pain / Fibromyalgia / Seizures,C-V,,026.01,007.069
+Anticonvulsants,Seizures / Nerve Pain,Anticonvulsants,Lamotrigine,Lamictal,Anticonvulsant,Seizures / Bipolar disorder,Rx,"Boxed warning: serious, potentially fatal skin rash.",026.02,007.070
+Anticonvulsants,Seizures / Nerve Pain,Anticonvulsants,Divalproex sodium,Depakote,Anticonvulsant,Seizures / Bipolar mania / Migraine prevention,Rx,,026.03,007.071
+Anticonvulsants,Seizures / Nerve Pain,Anticonvulsants,Levetiracetam,Keppra,Anticonvulsant,Seizures,Rx,,026.04,007.072
+Anticonvulsants,Seizures / Nerve Pain,Anticonvulsants,Topiramate,Topamax,Anticonvulsant,Seizures / Migraine prevention,Rx,,026.05,007.073
+Anticonvulsants,Seizures / Nerve Pain,Anticonvulsants,Carbamazepine,Tegretol,Anticonvulsant,Seizures / Trigeminal neuralgia,Rx,ISMP high-alert when used for children (liquid).,026.06,007.074
+Antipsychotics & Mood Stabilizers,Psychiatric / Mood Disorders,Antipsychotics,Quetiapine,Seroquel,Atypical antipsychotic,Schizophrenia / Bipolar disorder,Rx,,027.00,009.087
+Antipsychotics & Mood Stabilizers,Psychiatric / Mood Disorders,Antipsychotics,Aripiprazole,Abilify,Atypical antipsychotic,Schizophrenia / Bipolar disorder / Depression add-on,Rx,,027.01,009.088
+Antipsychotics & Mood Stabilizers,Psychiatric / Mood Disorders,Antipsychotics,Risperidone,Risperdal,Atypical antipsychotic,Schizophrenia / Bipolar disorder,Rx,,027.02,009.089
+Antipsychotics & Mood Stabilizers,Psychiatric / Mood Disorders,Mood Stabilizers,Lithium carbonate,Lithobid,Mood stabilizer,Bipolar disorder,Rx,,027.03,009.090
+Muscle Relaxants,Pain,Muscle Relaxants,Cyclobenzaprine,Flexeril,Skeletal muscle relaxant,Muscle spasm,Rx,,028.00,005.059
+Muscle Relaxants,Pain,Muscle Relaxants,Tizanidine,Zanaflex,Central alpha-2 agonist (muscle relaxant),Spasticity,Rx,,028.01,005.062
+Muscle Relaxants,Pain,Muscle Relaxants,Baclofen,Lioresal,Skeletal muscle relaxant (GABA-B agonist),Spasticity,Rx,,028.02,005.061
+Muscle Relaxants,Pain,Muscle Relaxants,Methocarbamol,Robaxin,Skeletal muscle relaxant,Muscle spasm,Rx,,028.03,005.060
+Stimulants,ADHD,Stimulants,Amphetamine / Dextroamphetamine,Adderall,CNS stimulant,ADHD / Narcolepsy,C-II,,029.00,011.099
+Stimulants,ADHD,Stimulants,Lisdexamfetamine,Vyvanse,CNS stimulant,ADHD / Binge eating disorder,C-II,,029.01,011.100
+Stimulants,ADHD,Stimulants,Methylphenidate,Ritalin / Concerta,CNS stimulant,ADHD,C-II,,029.02,011.101
+Stimulants,ADHD,Stimulants,Dexmethylphenidate,Focalin,CNS stimulant,ADHD,C-II,,029.03,011.102
+H1 Blockers (Antihistamines),Allergies / Respiratory,Antihistamines,Loratadine,Claritin,Antihistamine (H1 antagonist),Allergies,OTC,,030.00,012.103
+H1 Blockers (Antihistamines),Allergies / Respiratory,Antihistamines,Cetirizine,Zyrtec,Antihistamine (H1 antagonist),Allergies,OTC,,030.01,012.104
+H1 Blockers (Antihistamines),Allergies / Respiratory,Antihistamines,Levocetirizine,Xyzal,Antihistamine (H1 antagonist),Allergies,OTC,,030.02,012.105
+H1 Blockers (Antihistamines),Anxiety / Sleep,Other Anxiolytics / Hypnotics,Hydroxyzine,Atarax / Vistaril,Antihistamine (H1 antagonist),Anxiety / Itching,Rx,Look-alike/sound-alike: hydrALAZINE.,030.03,010.098
+H1 Blockers (Antihistamines),Nausea / Vomiting / Motion Sickness,Antiemetics,Meclizine,Antivert / Dramamine Less Drowsy,Antihistamine (H1 antagonist),Motion sickness / Vertigo,OTC / Rx,For motion sickness; the scopolamine patch is another option (change every 3 days).,030.04,013.119
+H2 Blockers,GI / Acid Reflux,PPIs / H2 Blockers,Famotidine,Pepcid,H2 receptor antagonist,GERD / Heartburn / Ulcers,OTC / Rx,,031.00,015.143
+PPIs (Proton Pump Inhibitors),GI / Acid Reflux,PPIs / H2 Blockers,Omeprazole,Prilosec,Proton pump inhibitor (PPI),GERD / Ulcers,OTC / Rx,Reduces clopidogrel's effect. Omeprazole + esomeprazole (Nexium) = therapeutic duplication.,032.00,015.139
+PPIs (Proton Pump Inhibitors),GI / Acid Reflux,PPIs / H2 Blockers,Pantoprazole,Protonix,Proton pump inhibitor (PPI),GERD / Ulcers,Rx,,032.01,015.142
+PPIs (Proton Pump Inhibitors),GI / Acid Reflux,PPIs / H2 Blockers,Esomeprazole,Nexium,Proton pump inhibitor (PPI),GERD / Ulcers,OTC / Rx,Reduces clopidogrel's effect.,032.02,015.140
+PPIs (Proton Pump Inhibitors),GI / Acid Reflux,PPIs / H2 Blockers,Lansoprazole,Prevacid,Proton pump inhibitor (PPI),GERD / Ulcers,OTC / Rx,Combining two PPIs = therapeutic duplication.,032.03,015.141
+Leukotriene Receptor Antagonists,Allergies / Respiratory,Asthma / COPD,Montelukast,Singulair,Leukotriene receptor antagonist,Asthma / Allergic rhinitis,Rx,Singulair tablets: dispense in the original container.,033.00,012.113
+NSAIDs,Pain,NSAIDs,Ibuprofen,Motrin / Advil,NSAID,Pain / Inflammation / Fever,OTC / Rx (higher strengths),"Bleeding risk with anticoagulants (warfarin, Xarelto, Eliquis). Inhibits COX enzymes.",034.00,005.053
+NSAIDs,Pain,NSAIDs,Naproxen,Aleve / Naprosyn,NSAID,Pain / Inflammation,OTC / Rx (higher strengths),"Bleeding risk with anticoagulants (warfarin, Xarelto, Eliquis). Inhibits COX enzymes. Tablets 250-750 mg.",034.01,005.054
+NSAIDs,Pain,NSAIDs,Diclofenac,Voltaren,NSAID,Arthritis pain / Inflammation,OTC (1% gel) / Rx (tablets),"Bleeding risk with anticoagulants (warfarin, Xarelto, Eliquis). Inhibits COX enzymes.",034.02,005.056
+NSAIDs,Pain,NSAIDs,Meloxicam,Mobic,NSAID,Arthritis pain / Inflammation,Rx,"Bleeding risk with anticoagulants (warfarin, Xarelto, Eliquis). Inhibits COX enzymes.",034.03,005.055
+NSAIDs,Pain,NSAIDs,Aspirin,Bayer / Ecotrin,NSAID / Antiplatelet,Pain / Fever / Heart attack and stroke prevention,OTC,"Bleeding risk with anticoagulants (warfarin, Xarelto, Eliquis). Inhibits COX enzymes. Low dose is used as an antiplatelet.",034.04,005.058
+NSAIDs,Pain,NSAIDs,Celecoxib,Celebrex,COX-2 selective NSAID,Arthritis pain / Inflammation,Rx,"Bleeding risk with anticoagulants (warfarin, Xarelto, Eliquis). Inhibits COX enzymes.",034.05,005.057
+Analgesics (Non-Opioid),Pain,Non-Opioid Analgesics,Acetaminophen,Tylenol,Analgesic / Antipyretic,Pain / Fever,OTC,"No anti-inflammatory effect. Alcohol increases liver toxicity. Forms: liquid, tablet, chewable, suppository, injection.",035.00,005.049
+Analgesics (Non-Opioid),Pain,Migraine,Butalbital / Acetaminophen / Caffeine,Fioricet,Barbiturate combination analgesic,Tension headache,Rx (Fiorinal with aspirin is C-III),,035.01,005.052
+Analgesics (Non-Opioid),Pain,Non-Opioid Analgesics,Menthol (topical),Bengay / Icy Hot,Topical counterirritant,Muscle and joint pain,OTC,,035.02,005.050
+Corticosteroids,Inflammation,Corticosteroids,Hydrocortisone,Cortizone-10 (topical) / Cortef (oral),Corticosteroid,Itching / Inflammation,OTC (topical 1%) / Rx,,036.00,006.067
+Corticosteroids,Inflammation,Corticosteroids,Triamcinolone,Kenalog,Corticosteroid,Inflammation / Skin conditions,Rx,,036.01,006.066
+Corticosteroids,Allergies / Respiratory,Nasal Steroids,Fluticasone propionate (nasal),Flonase,Intranasal corticosteroid,Allergic rhinitis,OTC / Rx,,036.02,012.106
+Corticosteroids,Inflammation,Corticosteroids,Prednisolone,Orapred,Corticosteroid,Inflammation / Asthma flares,Rx,Can raise blood sugar in patients with diabetes. Look-alike/sound-alike: predniSONE.,036.03,006.064
+Corticosteroids,Inflammation,Corticosteroids,Methylprednisolone,Medrol,Corticosteroid,Inflammation,Rx,Can raise blood sugar in patients with diabetes.,036.04,006.065
+Corticosteroids,Inflammation,Corticosteroids,Prednisone,Deltasone,Corticosteroid,Inflammation / Allergic reactions / Asthma flares,Rx,Can raise blood sugar in patients with diabetes. Look-alike/sound-alike: prednisoLONE.,036.05,006.063
+Corticosteroids,Allergies / Respiratory,Asthma / COPD,Budesonide (inhaled),Pulmicort,Inhaled corticosteroid,Asthma (controller),Rx,Rinse mouth with water after each use to prevent oral thrush (candidiasis).,036.06,012.110
+Corticosteroids,Allergies / Respiratory,Nasal Steroids,Mometasone (nasal),Nasonex,Intranasal corticosteroid,Allergic rhinitis,OTC / Rx,,036.07,012.107
+Corticosteroids,Allergies / Respiratory,Asthma / COPD,Fluticasone / Salmeterol,Advair Diskus,Inhaled corticosteroid / LABA,Asthma / COPD,Rx,Rinse mouth with water after each use to prevent oral thrush (candidiasis). Advair Diskus: discard 1 month after opening the foil pouch.,036.08,012.112
+Corticosteroids,Allergies / Respiratory,Asthma / COPD,Budesonide / Formoterol,Symbicort,Inhaled corticosteroid / LABA,Asthma / COPD,Rx,Rinse mouth with water after each use to prevent oral thrush (candidiasis).,036.09,012.111
+Opioids,Pain,Opioids,Morphine ER,MS Contin,Opioid analgesic,Severe pain,C-II,"C-II: no refills. Naloxone reverses opioid overdose (pinpoint pupils, slowed or stopped breathing).",037.00,005.044
+Opioids,Pain,Opioids,Oxycodone ER,OxyContin,Opioid analgesic,Severe pain,C-II,"C-II: no refills. Naloxone reverses opioid overdose (pinpoint pupils, slowed or stopped breathing).",037.01,005.045
+Opioids,Pain,Opioids,Hydrocodone / Acetaminophen,Norco / Lortab,Opioid analgesic combination,Moderate to severe pain,C-II,"C-II: no refills. Naloxone reverses opioid overdose (pinpoint pupils, slowed or stopped breathing). Count total daily acetaminophen. Codeine allergy may cross-react with hydrocodone.",037.02,005.046
+Opioids,Pain,Opioids,Hydrocodone ER,Hysingla ER / Zohydro ER,Opioid analgesic,Severe chronic pain,C-II,"C-II: no refills. Naloxone reverses opioid overdose (pinpoint pupils, slowed or stopped breathing).",037.03,005.047
+Opioids,Pain,Opioids,Tramadol,Ultram,Opioid analgesic (weak),Moderate pain,C-IV,C-IV opioid. Serotonin syndrome risk with SSRIs/SNRIs.,037.04,005.048
+5-HT1B/1D Agonists (Triptans),Pain,Migraine,Sumatriptan,Imitrex,Triptan (5-HT1B/1D agonist),Migraine,Rx,"Forms: tablet, nasal spray, injection (no syrup). Causes vasoconstriction.",038.00,005.051
+5-HT3 Antagonists,Nausea / Vomiting / Motion Sickness,Antiemetics,Ondansetron,Zofran,5-HT3 antagonist,Nausea / Vomiting,Rx,,039.00,013.117
+Antibiotics: Penicillins,Infections,Antibiotics,Amoxicillin,Amoxil,Penicillin antibiotic,Bacterial infections,Rx,"Suspension: room temp or refrigerator, discard after 14 days. Diarrhea = side effect; hives or swelling = true allergy.",040.00,014.120
+Antibiotics: Penicillins,Infections,Antibiotics,Amoxicillin / Clavulanate,Augmentin,Penicillin antibiotic + beta-lactamase inhibitor,Bacterial infections,Rx,"Suspension: refrigerate, discard after 10 days. Tablets and oral suspension only. Avoid with beta-lactam (penicillin/cephalosporin) allergy.",040.01,014.121
+Antibiotics: Cephalosporins,Infections,Antibiotics,Cephalexin,Keflex,Cephalosporin antibiotic (1st generation),Bacterial infections,Rx,"Suspension: refrigerate, discard after 14 days. Small cross-sensitivity risk with penicillin allergy.",041.00,014.122
+Antibiotics: Cephalosporins,Infections,Antibiotics,Cefdinir,Omnicef,Cephalosporin antibiotic (3rd generation),Bacterial infections,Rx,"Suspension: room temp or refrigerator, discard after 10 days.",041.01,014.123
+Antibiotics: Macrolides,Infections,Antibiotics,Azithromycin,Zithromax / Z-Pak,Macrolide antibiotic,Bacterial infections,Rx,"Suspension: room temp or refrigerator, discard after 10 days.",042.00,014.124
+Antibiotics: Lincosamides,Infections,Antibiotics,Clindamycin,Cleocin,Lincosamide antibiotic,Bacterial infections,Rx,"Oral solution: room temp (do not refrigerate), discard after 14 days.",043.00,014.131
+Antibiotics: Fluoroquinolones,Infections,Antibiotics,Ciprofloxacin,Cipro,Fluoroquinolone antibiotic,Bacterial infections / UTI,Rx,Boxed warning: tendon rupture. Suspension: discard after 14 days.,044.00,014.126
+Antibiotics: Fluoroquinolones,Infections,Antibiotics,Levofloxacin,Levaquin,Fluoroquinolone antibiotic,Bacterial infections / Pneumonia,Rx,Boxed warning: tendon rupture.,044.01,014.127
+Antibiotics: Nitrofurans,Infections,Antibiotics,Nitrofurantoin,Macrobid,Urinary antibacterial,Urinary tract infection,Rx,,045.00,014.129
+Antibiotics: Nitroimidazoles,Infections,Antibiotics,Metronidazole,Flagyl,Nitroimidazole antibiotic,Bacterial and parasitic infections,Rx,"No alcohol during treatment: cramps, nausea, vomiting, headache, flushing.",046.00,014.130
+Antibiotics: Sulfonamides,Infections,Antibiotics,Sulfamethoxazole / Trimethoprim,Bactrim,Sulfonamide antibiotic,Bacterial infections / UTI,Rx,Sulfonamide: avoid with sulfa allergy.,047.00,014.128
+Antibiotics: Tetracyclines,Infections,Antibiotics,Doxycycline,Vibramycin / Doryx,Tetracycline antibiotic,Bacterial infections / Acne,Rx,Photosensitivity: use sun protection. Can discolor teeth in young children.,048.00,014.125
+Antibiotics: Topical,Infections,Antibiotics,Mupirocin (topical),Bactroban,Topical antibiotic,Skin infections,Rx,,049.00,014.132
+Antibiotics: Topical,Infections,Antibiotics,Bacitracin / Neomycin / Polymyxin B,Neosporin,Topical triple antibiotic,Minor skin wounds,OTC,,049.01,014.133
+Antifungals,Infections,Antifungals,Fluconazole,Diflucan,Azole antifungal,Fungal infections,Rx,"Suspension: room temp or refrigerator, discard after 14 days.",050.00,014.138
+Antivirals,Infections,Antivirals,Valacyclovir,Valtrex,Antiviral,Herpes / Shingles,Rx,,051.00,014.135
+Antivirals,Infections,Antivirals,Acyclovir,Zovirax,Antiviral,Herpes / Shingles,Rx,,051.01,014.134
+Antivirals,Infections,Antivirals,Oseltamivir,Tamiflu,Neuraminidase inhibitor (antiviral),Influenza,Rx,,051.02,014.136
+Antivirals,Infections,Antivirals,Nirmatrelvir / Ritonavir,Paxlovid,Protease inhibitor (antiviral),COVID-19,Rx,,051.03,014.137
+Cough Suppressants,Allergies / Respiratory,Cough,Benzonatate,Tessalon Perles,Antitussive,Cough,Rx,,052.00,012.108
+Biguanides,Diabetes,Biguanides,Metformin,Glucophage,Biguanide,Type 2 diabetes,Rx,ISMP high-alert (oral hypoglycemic). ER: usually once or twice daily.,053.00,016.148
+Biguanides,Diabetes,Biguanides,Metformin / Sitagliptin,Janumet,Biguanide / DPP-4 inhibitor,Type 2 diabetes,Rx,,053.01,016.149
+DPP-4 Inhibitors,Diabetes,DPP-4 / SGLT-2 / TZD,Sitagliptin,Januvia,DPP-4 inhibitor,Type 2 diabetes,Rx,,054.00,016.153
+DPP-4 Inhibitors,Diabetes,DPP-4 / SGLT-2 / TZD,Linagliptin,Tradjenta,DPP-4 inhibitor,Type 2 diabetes,Rx,,054.01,016.154
+GLP-1 Analogs,Diabetes,GLP-1 Agonists,Semaglutide,Ozempic (Wegovy for weight loss),GLP-1 receptor agonist,Type 2 diabetes / Weight management,Rx,"Unopened pens: refrigerate, do not freeze. In use: up to 56 days at room temp or in the fridge.",055.00,016.157
+GLP-1 Analogs,Diabetes,GLP-1 Agonists,Liraglutide,Victoza (Saxenda for weight loss),GLP-1 receptor agonist,Type 2 diabetes / Weight management,Rx,"Unopened pens: refrigerate, do not freeze. In use: up to 30 days.",055.01,016.158
+SGLT-2 Inhibitors,Diabetes,DPP-4 / SGLT-2 / TZD,Canagliflozin,Invokana,SGLT-2 inhibitor,Type 2 diabetes,Rx,,056.00,016.155
+Sulfonylureas,Diabetes,Sulfonylureas,Glipizide,Glucotrol,Sulfonylurea,Type 2 diabetes,Rx,ISMP high-alert (oral hypoglycemic): risk of low blood sugar. Look-alike/sound-alike: glyBURIDE.,057.00,016.150
+Sulfonylureas,Diabetes,Sulfonylureas,Glimepiride,Amaryl,Sulfonylurea,Type 2 diabetes,Rx,ISMP high-alert (oral hypoglycemic): risk of low blood sugar.,057.01,016.151
+Sulfonylureas,Diabetes,Sulfonylureas,Glyburide,Diabeta / Glynase,Sulfonylurea,Type 2 diabetes,Rx,ISMP high-alert (oral hypoglycemic): risk of low blood sugar. Look-alike/sound-alike: glipiZIDE.,057.02,016.152
+Thiazolidinediones (TZDs),Diabetes,DPP-4 / SGLT-2 / TZD,Pioglitazone,Actos,Thiazolidinedione (TZD),Type 2 diabetes,Rx,,058.00,016.156
+Insulins,Diabetes,Insulins,Insulin lispro,Humalog,Rapid-acting insulin,Diabetes,Rx,ISMP high-alert. Unopened: refrigerate (do not freeze). In use: room temperature up to 28 days.,059.00,016.159
+Insulins,Diabetes,Insulins,Insulin aspart,Novolog,Rapid-acting insulin,Diabetes,Rx,ISMP high-alert. Unopened: refrigerate (do not freeze). In use: room temperature up to 28 days.,059.01,016.160
+Insulins,Diabetes,Insulins,Insulin regular (human),Humulin R / Novolin R,Short-acting insulin,Diabetes,OTC (U-100; U-500 is Rx),ISMP high-alert. Unopened: refrigerate. In-use vials last about a month at room temp (check the product).,059.02,016.161
+Insulins,Diabetes,Insulins,Insulin glargine,Lantus / Basaglar,Long-acting insulin,Diabetes,Rx,ISMP high-alert. Unopened: refrigerate. In use: room temp up to 28 days.,059.03,016.162
+Insulins,Diabetes,Insulins,Insulin detemir,Levemir,Long-acting insulin,Diabetes,Rx,ISMP high-alert. Unopened: refrigerate. In use: room temp up to 42 days.,059.04,016.163
+Hormones,Hormones,Thyroid,Levothyroxine,Synthroid / Levoxyl,Thyroid hormone (T4),Hypothyroidism,Rx,"Take on an empty stomach 30-60 min before breakfast, or at bedtime 3-4 hours after the last meal.",060.00,017.164
+Hormones,Hormones,Thyroid,Thyroid (desiccated),Armour Thyroid,Thyroid hormone (T4 + T3),Hypothyroidism,Rx,,060.01,017.165
+Hormones,Hormones,Sex Hormones,Estradiol,Estrace,Estrogen,Menopause symptoms,Rx,,060.02,017.174
+Hormones,Hormones,Sex Hormones,Progesterone,Prometrium,Progestin,Hormone therapy / Abnormal uterine bleeding,Rx,Prometrium capsules contain peanut oil: check for peanut allergy.,060.03,017.175
+Hormones,Hormones,Sex Hormones,Testosterone,AndroGel,Androgen,Low testosterone,C-III,"Anabolic steroids are C-III (Anabolic Steroid Control Act, 1990).",060.04,017.176
+Hormones,Hormones,Oral Contraceptives,Ethinyl estradiol / Norethindrone acetate,Loestrin / Junel / Microgestin,Combined oral contraceptive,Pregnancy prevention,Rx,Patient package insert required with every fill. Rifampin reduces effectiveness (exam questions also flag antibiotics such as amoxicillin).,060.05,017.166
+Hormones,Hormones,Oral Contraceptives,Ethinyl estradiol / Norgestimate,Ortho Tri-Cyclen / Sprintec,Combined oral contraceptive,Pregnancy prevention / Acne,Rx,Patient package insert required with every fill. Rifampin reduces effectiveness (exam questions also flag antibiotics such as amoxicillin).,060.06,017.167
+Hormones,Hormones,Oral Contraceptives,Ethinyl estradiol / Drospirenone,Yaz / Yasmin,Combined oral contraceptive,Pregnancy prevention / PMDD / Acne,Rx,Patient package insert required with every fill. Rifampin reduces effectiveness (exam questions also flag antibiotics such as amoxicillin).,060.07,017.168
+Hormones,Hormones,Oral Contraceptives,Ethinyl estradiol / Levonorgestrel,Amethyst / Aviane,Combined oral contraceptive,Pregnancy prevention,Rx,Patient package insert required with every fill. Rifampin reduces effectiveness (exam questions also flag antibiotics such as amoxicillin).,060.08,017.169
+Hormones,Hormones,Oral Contraceptives,Ethinyl estradiol / Desogestrel,Apri / Azurette,Combined oral contraceptive,Pregnancy prevention,Rx,Patient package insert required with every fill. Rifampin reduces effectiveness (exam questions also flag antibiotics such as amoxicillin).,060.09,017.170
+Hormones,Hormones,Oral Contraceptives,Norethindrone,Camila / Errin,Progestin-only pill,Pregnancy prevention,Rx,Patient package insert required with every fill. Rifampin reduces effectiveness (exam questions also flag antibiotics such as amoxicillin).,060.10,017.171
+Hormones,Hormones,Oral Contraceptives,Norgestrel,Opill,Progestin-only pill,Pregnancy prevention,OTC,Patient package insert required with every fill. Rifampin reduces effectiveness (exam questions also flag antibiotics such as amoxicillin).,060.11,017.172
+Hormones,Hormones,Other Contraceptives,Ethinyl estradiol / Etonogestrel,NuvaRing,Vaginal ring contraceptive,Pregnancy prevention,Rx,"Pharmacy stores NuvaRing in the refrigerator; after dispensing, room temp for up to 4 months.",060.12,017.173
+Vitamins & Supplements,Vitamins / Supplements,Supplements,Cyanocobalamin,Nascobal (nasal),Vitamin B12,B12 deficiency,OTC / Rx,,061.00,018.179
+Vitamins & Supplements,Vitamins / Supplements,Supplements,Folic acid,Folvite,Vitamin B9,Folate deficiency / Pregnancy,OTC / Rx (1 mg),,061.01,018.178
+Vitamins & Supplements,Vitamins / Supplements,Supplements,Potassium chloride,Klor-Con,Potassium supplement (electrolyte),Low potassium,Rx,Overdose can be fatal; potassium-sparing diuretics and ACE inhibitors raise potassium too.,061.02,018.182
+Vitamins & Supplements,Vitamins / Supplements,Supplements,Ergocalciferol (vitamin D2),Drisdol,Vitamin D,Vitamin D deficiency,Rx,,061.03,018.177
+Vitamins & Supplements,Vitamins / Supplements,Supplements,Ferrous sulfate,Feosol,Iron supplement,Iron deficiency anemia,OTC,,061.04,018.180
+Vitamins & Supplements,Vitamins / Supplements,Supplements,Magnesium oxide,Mag-Ox / Uro-Mag,Magnesium supplement,Low magnesium,OTC,,061.05,018.181
+Bisphosphonates,Joints / Bone / Immune,Osteoporosis,Alendronate,Fosamax,Bisphosphonate,Osteoporosis,Rx,Take with a full glass of water; stay upright at least 30 min and until after the first food of the day.,062.00,020.187
+Xanthine Oxidase Inhibitors,Joints / Bone / Immune,Gout,Allopurinol,Zyloprim,Xanthine oxidase inhibitor,Gout prevention,Rx,,063.00,020.186
+Dopamine Agonists / Parkinson's,Neurology,Parkinson's,Ropinirole,Requip,Dopamine agonist,Parkinson's / Restless legs syndrome,Rx,,064.00,022.197
+Dopamine Agonists / Parkinson's,Neurology,Parkinson's,Pramipexole,Mirapex,Dopamine agonist,Parkinson's / Restless legs syndrome,Rx,,064.01,022.198
+Dopamine Agonists / Parkinson's,Neurology,Parkinson's,Carbidopa / Levodopa,Sinemet,Dopamine precursor / Decarboxylase inhibitor,Parkinson's disease,Rx,,064.02,022.196
+Prostaglandin Analogs,Eye,Glaucoma,Latanoprost,Xalatan,Prostaglandin analog,Glaucoma,Rx,Unopened: refrigerate. Once opened: room temp for up to 6 weeks.,065.00,019.183
+TNF Inhibitors,GI / Acid Reflux,Bowel,Adalimumab,Humira,TNF-alpha inhibitor (biologic),Crohn's / Ulcerative colitis / Rheumatoid arthritis,Rx,Store in the refrigerator.,066.00,015.147
+Immunosuppressants,Joints / Bone / Immune,Autoimmune,Hydroxychloroquine,Plaquenil,Antimalarial,Lupus / Rheumatoid arthritis / Malaria,Rx,,066.90,020.189
+Immunosuppressants,Allergies / Respiratory,Asthma / COPD,Dupilumab,Dupixent,Interleukin-4/13 inhibitor (biologic),Eczema / Asthma / COPD,Rx,Store in the refrigerator.,066.91,012.116
+Antineoplastics,Joints / Bone / Immune,Autoimmune,Methotrexate,Trexall,Antimetabolite,Rheumatoid arthritis / Psoriasis / Cancer,Rx,"ISMP high-alert. Other brands: Otrexup, Rasuvo, Xatmep.",067.00,020.188
+Anticholinergics,Urology,Overactive Bladder,Oxybutynin,Ditropan XL,Anticholinergic (antimuscarinic),Overactive bladder,Rx,,068.00,021.194
+Anticholinergics,Allergies / Respiratory,Asthma / COPD,Tiotropium,Spiriva,Long-acting anticholinergic (LAMA),COPD / Asthma,Rx,Look-alike: Spiriva / Apidra.,068.01,012.114
+Anticholinergics,Allergies / Respiratory,Asthma / COPD,Ipratropium / Albuterol,Combivent Respimat,Anticholinergic / SABA,COPD,Rx,,068.02,012.115
+Anticholinergics,GI / Acid Reflux,Bowel,Dicyclomine,Bentyl,Anticholinergic (antispasmodic),Irritable bowel syndrome,Rx,,068.03,015.144
+Beta-3 Agonists,Urology,Overactive Bladder,Mirabegron,Myrbetriq,Beta-3 agonist,Overactive bladder,Rx,,068.90,021.195
+NMDA Antagonists,Neurology,Alzheimer's,Memantine,Namenda,NMDA receptor antagonist,Alzheimer's disease,Rx,,069.00,022.200
+Cholinesterase Inhibitors,Neurology,Alzheimer's,Donepezil,Aricept,Cholinesterase inhibitor,Alzheimer's disease,Rx,,070.00,022.199
+Antiemetics,Nausea / Vomiting / Motion Sickness,Antiemetics,Promethazine,Phenergan,Antihistamine (phenothiazine),Nausea / Vomiting / Allergies,Rx,Causes drowsiness.,071.00,013.118
+Laxatives,GI / Acid Reflux,Bowel,Polyethylene glycol 3350,Miralax,Osmotic laxative,Constipation,OTC,,072.00,015.146
+Stool Softeners,GI / Acid Reflux,Bowel,Docusate,Colace,Stool softener,Constipation,OTC,,073.00,015.145

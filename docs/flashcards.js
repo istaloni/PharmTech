@@ -1,7 +1,7 @@
 // Shared flashcard engine for the PharmTech site.
 // Used from any post's {ojs} cell:
 //
-//   fc = import(new URL("../../flashcards.js", document.baseURI).href)   // then use fc.flashcards, fc.esc
+//   fc = import(new URL("../../flashcards.js?v=2026-10-20b", document.baseURI).href)   // then use fc.flashcards, fc.esc
 //   flashcards({ cards, modes, storageKey, idField, groupField, searchFields, invalidation })
 //
 // cards        array of row objects (e.g. from FileAttachment(...).csv())
@@ -18,12 +18,97 @@
 // searchFields columns the search box looks through
 // invalidation pass Observable's `invalidation` so keyboard shortcuts are cleaned up
 
+// Styles travel with the engine (not styles.css) so a browser can never pair new card
+// code with a cached old stylesheet. Bump the ?v= in each page's import after editing.
+const FLASHCARD_CSS = `
+.fc-app { max-width: 560px; margin: 1.5rem auto; font-family: inherit; }
+
+.fc-controls { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem .8rem; margin-bottom: 1rem; font-size: .85rem; }
+.fc-controls label { display: flex; flex-direction: column; gap: .25rem; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; font-size: .7rem; color: #555; }
+.fc-controls select, .fc-controls input[type=search] {
+  font: inherit; font-size: .9rem; text-transform: none; letter-spacing: 0; font-weight: 400;
+  padding: .45rem .6rem; border: 1px solid #ccc; border-radius: 8px; background: #fff; color: #222; width: 100%;
+}
+.fc-controls .fc-check { flex-direction: row; align-items: center; gap: .45rem; align-self: end; padding-bottom: .5rem; }
+
+.fc-scene { perspective: 1200px; height: 340px; cursor: pointer; outline: none; }
+.fc-scene:focus-visible .fc-card { box-shadow: 0 0 0 3px #1a73e8; }
+.fc-card {
+  position: relative; width: 100%; height: 100%; border-radius: 16px;
+  transform-style: preserve-3d; transition: transform .6s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .12); border: 1px solid #e3e3e3;
+}
+.fc-card.is-flipped { transform: rotateY(180deg); }
+.fc-face {
+  position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  border-radius: 16px; padding: 1.5rem; display: flex; flex-direction: column;
+  align-items: center; justify-content: flex-start; text-align: center; background: #fff; overflow: auto;
+}
+.fc-back { transform: rotateY(180deg); background: #f6f8fb; }
+/* class banner pinned to the top; card content centered below it (long content scrolls) */
+.fc-face { padding-top: 0; }
+.fc-classbar {
+  flex: none; align-self: stretch; margin: 0 -1.5rem 0; padding: .55rem 1rem;
+  background: #1d3557; color: #fff; font-weight: 700; font-size: 1.05rem; letter-spacing: .02em;
+  border-radius: 16px 16px 0 0; text-align: center;
+}
+.fc-body { margin: auto 0; padding-top: 1.25rem; display: flex; flex-direction: column; align-items: center; width: 100%; }
+
+.fc-kicker { font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; color: #888; margin-bottom: .4rem; }
+.fc-big { font-size: 1.7rem; font-weight: 700; line-height: 1.2; color: #1d2433; }
+.fc-big.fc-mid { font-size: 1.3rem; }
+.fc-row { margin-top: .6rem; font-size: 1rem; color: #333; }
+.fc-dl { display: grid; grid-template-columns: auto 1fr; gap: .35rem .9rem; margin: 1rem 0 0; text-align: left; font-size: .95rem; }
+.fc-dl dt { font-weight: 600; color: #666; }
+.fc-dl dd { margin: 0; color: #222; }
+
+.fc-badge { display: inline-block; padding: .1rem .55rem; border-radius: 999px; font-size: .8rem; font-weight: 600; }
+.fc-rx   { background: #e7f0fd; color: #1a4fa0; }
+.fc-otc  { background: #e6f6ea; color: #1e6b34; }
+.fc-ctrl { background: #fdeaea; color: #a32020; }
+.fc-answer { font-size: 1.1rem; line-height: 1.5; color: #1d2433; max-width: 30rem; }
+.fc-dl dd.fc-note { color: #8a4b00; font-size: .88rem; }
+
+.fc-meta { text-align: center; font-size: .85rem; color: #666; margin-top: .6rem; min-height: 1.2em; }
+.fc-known { color: #1e6b34; }
+
+.fc-nav { display: flex; justify-content: center; align-items: center; gap: .6rem; flex-wrap: wrap; margin-top: .8rem; }
+.fc-nav button {
+  font: inherit; font-size: .85rem; padding: .5rem 1rem; border-radius: 999px;
+  border: 1px solid #ccc; background: #fff; color: #222; cursor: pointer;
+}
+.fc-nav button:hover { background: #f2f2f2; }
+.fc-nav .fc-know { background: #1e6b34; border-color: #1e6b34; color: #fff; }
+.fc-nav .fc-know:hover { background: #185a2b; }
+.fc-nav .fc-learn { border-color: #c77700; color: #8a5300; }
+.fc-nav .fc-reset { border: none; color: #888; text-decoration: underline; padding: .5rem .4rem; }
+.fc-count { font-weight: 700; min-width: 5.5rem; text-align: center; }
+
+.fc-progress { height: 6px; background: #eee; border-radius: 999px; overflow: hidden; margin-top: 1rem; }
+.fc-bar { height: 100%; width: 0; background: #1e6b34; transition: width .3s; }
+.fc-progress-text { text-align: center; font-size: .8rem; color: #666; margin-top: .35rem; }
+
+@media (max-width: 520px) {
+  .fc-controls { grid-template-columns: 1fr; }
+  .fc-scene { height: 400px; }
+  .fc-big { font-size: 1.4rem; }
+}
+`;
+function injectStyles() {
+  if (document.getElementById("fc-styles")) return;
+  const style = document.createElement("style");
+  style.id = "fc-styles";
+  style.textContent = FLASHCARD_CSS;
+  document.head.appendChild(style);
+}
+
 export const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
 export function flashcards({
   cards, modes, storageKey, idField, groupField, groupLabel = "Group", groupings,
   subgroupField, searchFields, invalidation, placeholder = "Search"
 }) {
+  injectStyles();
   if (!groupings && groupField) groupings = [{ label: groupLabel, field: groupField }];
   groupings = groupings || [];
   const idOf = (d, k) => idField ? d[idField] : (d.id ?? String(k));

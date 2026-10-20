@@ -15,7 +15,7 @@ Cards are grouped by **pharmacological class**, in the same order as my class sl
 
 ```{ojs}
 //| echo: false
-fc = import(new URL("../../flashcards.js", document.baseURI).href)
+fc = import(new URL("../../flashcards.js?v=2026-10-20b", document.baseURI).href)
 flashcards = fc.flashcards
 esc = fc.esc
 meds = FileAttachment("top200medications.csv").csv()
